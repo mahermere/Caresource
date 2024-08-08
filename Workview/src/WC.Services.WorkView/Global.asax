@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="CareSource.WC.Services.WorkView.WebApiApplication" Language="C#" %>
