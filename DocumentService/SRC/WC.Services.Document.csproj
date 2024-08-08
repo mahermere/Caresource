@@ -1,0 +1,743 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4780A698-D9F4-42E8-8B99-1ED2450A048B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CareSource.WC.Services.Document</RootNamespace>
+    <AssemblyName>CareSource.WC.Services.Document</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44380</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+    <DocumentationFile>bin\CareSource.WC.Services.Document.xml</DocumentationFile>
+    <NoWarn>1591;IDE0008</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+    <DocumentationFile>bin\CareSource.WC.Services.Document.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CareSource.WC.Entities, Version=4.4.7.839, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CareSource.WC.Entities.4.4.7.839-alpha\lib\netstandard2.0\CareSource.WC.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="CareSource.WC.OnBase.Core, Version=4.3.17.3843, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CareSource.WC.OnBase.Core.4.3.17.3843\lib\net461\CareSource.WC.OnBase.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Hyland.Types, Version=16.0.0.40, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\references\Hyland.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Hyland.Unity, Version=16.0.0.40, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\references\Hyland.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.WebApi.Versioning, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Versioning.4.1.1\lib\net45\Microsoft.AspNet.WebApi.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.WebApi.Versioning.ApiExplorer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Versioning.ApiExplorer.4.1.1\lib\net45\Microsoft.AspNet.WebApi.Versioning.ApiExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.6.0.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.Logging.6.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=6.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.Options.6.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.Primitives.6.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Swashbuckle.Core.5.6.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Configuration.ConfigurationManager.6.0.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.9\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.9\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.11.10\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AspNet.WebApi, Version=5.11.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.AspNet.WebApi.5.11.2\lib\net46\Unity.AspNet.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.5.11.10\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\v3\Interfaces\ICreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\v3\Interfaces\IFileAdapter.cs" />
+    <Compile Include="Adapters\v3\Interfaces\IGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v3\Interfaces\ISearchDocumentAdapter.cs" />
+    <Compile Include="Adapters\v3\OnBaseCreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\v3\OnBaseDocumentAdapter.cs" />
+    <Compile Include="Adapters\v3\OnBaseGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v3\WindowsFileAdapter.cs" />
+    <Compile Include="Adapters\v5\Interfaces\ICreateKeywordAdapter.cs" />
+    <Compile Include="Adapters\v5\OnBaseCreateKeywordAdapter.cs" />
+    <Compile Include="Adapters\v5\OnBaseGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v6\DataAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\ICreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\ICreateKeywordAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\IDataAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\IFileAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\IGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\IKeywordAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\IOnBaseAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\IOnBaseSqlAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\ISearchAdapter.cs" />
+    <Compile Include="Adapters\v6\Interfaces\ISqlAdapter.cs" />
+    <Compile Include="Adapters\v6\SqlAdapter.cs" />
+    <Compile Include="Adapters\v6\SearchAdapter.cs" />
+    <Compile Include="Adapters\v6\KeywordAdapter.cs" />
+    <Compile Include="Adapters\v6\OnBaseAdapter.cs" />
+    <Compile Include="App_Code\Logging.cs" />
+    <Compile Include="App_Code\IEnumerableExtensions.cs" />
+    <Compile Include="Adapters\v6\OnBaseCreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\v6\OnBaseCreateKeywordAdapter.cs" />
+    <Compile Include="Adapters\v6\OnBaseGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v6\OnBaseSqlAdapter.Count.cs">
+      <DependentUpon>OnBaseSqlAdapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adapters\v6\OnBaseSqlAdapter.cs" />
+    <Compile Include="Adapters\v6\OnBaseSqlAdapter.Search.cs">
+      <DependentUpon>OnBaseSqlAdapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adapters\v6\WindowsFileAdapter.cs" />
+    <Compile Include="Controllers\v6\DocumentController.Count.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v6\DocumentController.cs" />
+    <Compile Include="Controllers\v6\ExportController.cs" />
+    <Compile Include="Controllers\v6\DocumentController.FileLink.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v6\DocumentController.Retrieval.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v6\DocumentController.Search.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v6\KeywordController.cs" />
+    <Compile Include="Controllers\v6\MemberController.Count.cs">
+      <DependentUpon>MemberController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v6\MemberController.cs" />
+    <Compile Include="Controllers\v6\MemberController.Search.cs">
+      <DependentUpon>MemberController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v6\ProviderController.Count.cs">
+      <DependentUpon>ProviderController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v6\ProviderController.cs" />
+    <Compile Include="Controllers\v6\ProviderController.Search.cs">
+      <DependentUpon>ProviderController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v5\DocumentController.Retrieval.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalConstants.cs" />
+    <Compile Include="Managers\v3\BaseDocumentManager.cs" />
+    <Compile Include="Managers\v3\CreateDocumentManager.cs" />
+    <Compile Include="Managers\v3\DocumentManager.cs" />
+    <Compile Include="Managers\v3\GetDocumentManager.cs" />
+    <Compile Include="Managers\v3\Interfaces\ICreateDocumentManager.cs" />
+    <Compile Include="Managers\v3\Interfaces\IDocumentManager.cs" />
+    <Compile Include="Managers\v3\Interfaces\IGetDocumentManager.cs" />
+    <Compile Include="Managers\v6\BaseDocumentManager.cs" />
+    <Compile Include="Managers\v6\ClaimsManager.cs" />
+    <Compile Include="Managers\v6\CreateDocumentManager.cs" />
+    <Compile Include="Managers\v6\DocumentManager.cs" />
+    <Compile Include="Managers\v6\ExportDocumentsManager.cs" />
+    <Compile Include="Managers\v6\GetDocumentManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\IExportDocumentsManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\IClaimsManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\ICreateDocumentManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\IDocumentManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\IGetDocumentManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\IKeywordManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\IMemberManager.cs" />
+    <Compile Include="Managers\v6\Interfaces\IProviderManager.cs" />
+    <Compile Include="Managers\v6\KeywordManager.cs" />
+    <Compile Include="Managers\v6\MemberManager.cs" />
+    <Compile Include="Managers\v6\ProviderManager.cs" />
+    <Compile Include="Models\v3\CreateDocumentFileLinkRequest.cs" />
+    <Compile Include="Models\v3\CreateDocumentFileLinkResponse.cs" />
+    <Compile Include="Models\v3\Interfaces\IFilteredRequest.cs" />
+    <Compile Include="Models\v3\Interfaces\ISearchRequest.cs" />
+    <Compile Include="Models\v3\OnBaseDocument.cs" />
+    <Compile Include="Models\v3\Request.cs" />
+    <Compile Include="Models\v3\SearchRequest.cs" />
+    <Compile Include="Models\v6\ClaimsRequest.cs" />
+    <Compile Include="Models\v6\CreateDocument.cs" />
+    <Compile Include="Models\v6\CreateDocumentFileLink.cs" />
+    <Compile Include="Models\v6\CreateDocumentFileLinkRequest.cs" />
+    <Compile Include="Models\v6\CreateDocumentFileLinkResponse.cs" />
+    <Compile Include="Models\v6\CreateDocumentRequest.cs" />
+    <Compile Include="Models\v6\Document.cs" />
+    <Compile Include="Models\v6\DocumentHeader.cs" />
+    <Compile Include="Models\v6\DocumentKeywordRequest.cs" />
+    <Compile Include="Models\v6\DocumentKeywordResponse.cs" />
+    <Compile Include="Models\v6\DocumentNotFoundException.cs" />
+    <Compile Include="Models\v6\ExceptionResponse.cs" />
+    <Compile Include="Models\v6\Failure.cs" />
+    <Compile Include="Models\v6\Interfaces\IDownloadRequest.cs" />
+    <Compile Include="Models\v6\Interfaces\IExportDocumentRequest.cs" />
+    <Compile Include="Models\v6\Interfaces\IFilteredRequest.cs" />
+    <Compile Include="Models\v6\Interfaces\IPagingRequest.cs" />
+    <Compile Include="Models\v6\Interfaces\IRequest.cs" />
+    <Compile Include="Models\v6\Interfaces\ISearchRequest.cs" />
+    <Compile Include="Models\v6\Interfaces\IExportResult.cs" />
+    <Compile Include="Models\v6\Interfaces\ISearchResult.cs" />
+    <Compile Include="Models\v6\InvalidDocumentTypeException.cs" />
+    <Compile Include="Models\v6\InvalidKeywordException.cs" />
+    <Compile Include="Models\v6\KeywordUpdate.cs" />
+    <Compile Include="Models\v6\KeywordUpdateResult.cs" />
+    <Compile Include="Models\v6\OnBaseDocument.cs" />
+    <Compile Include="Models\v6\ProblemResponse.cs" />
+    <Compile Include="Models\v6\Requests\BatchUpdateKeywordsRequest.cs" />
+    <Compile Include="Models\v6\Requests\CountRequest.cs" />
+    <Compile Include="Models\v6\Requests\DownloadRequest.cs" />
+    <Compile Include="Models\v6\Requests\ExportDocumentRequest.cs" />
+    <Compile Include="Models\v6\Requests\Request.cs" />
+    <Compile Include="Models\v6\Requests\SearchRequest.cs" />
+    <Compile Include="Models\v6\Responses\BaseResponse.cs" />
+    <Compile Include="Models\v6\Responses\DocumentTypesCountResponse.cs" />
+    <Compile Include="Models\v6\Responses\KeywordUpdateResponse.cs" />
+    <Compile Include="Models\v6\Responses\RetrieveDocumentResponse.cs" />
+    <Compile Include="Models\v6\Responses\ExportDocumentResponse.cs" />
+    <Compile Include="Models\v6\Responses\SearchResponse.cs" />
+    <Compile Include="Models\v6\Responses\TotalDocumentCountResponse.cs" />
+    <Compile Include="Models\v6\ExportResult.cs" />
+    <Compile Include="Models\v6\SearchResult.cs" />
+    <Compile Include="Models\v6\ValidationProblemResponse.cs" />
+    <Compile Include="Models\v5\CreateDocument.cs" />
+    <Compile Include="Models\v5\CreateDocumentFileLinkRequest.cs" />
+    <Compile Include="Models\v5\DocumentNotFoundException.cs" />
+    <Compile Include="Models\v5\InvalidKeywordException.cs" />
+    <Compile Include="Models\v5\InvalidDocumentTypeException.cs" />
+    <Compile Include="Models\v5\Responses\RetrieveDocumentResponse.cs" />
+    <Compile Include="Models\v5\SearchResult.cs" />
+    <Compile Include="StringResouces.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResouces.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\LegalExport.aspx.cs">
+      <DependentUpon>LegalExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Global.asax" />
+    <Compile Include="Adapters\Interfaces\ICreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\Interfaces\ICreateKeywordAdapter.cs" />
+    <Compile Include="Adapters\Interfaces\IFileAdapter.cs" />
+    <Compile Include="Adapters\v4\Interfaces\IGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v4\Interfaces\ISearchDocumentAdapter.cs" />
+    <Compile Include="Adapters\v4\Interfaces\IWorkViewAdapter.cs" />
+    <Compile Include="Adapters\v4\WorkView\SearchWorkviewAdapter.cs" />
+    <Compile Include="Adapters\v5\Interfaces\ICreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\v5\Interfaces\IFileAdapter.cs" />
+    <Compile Include="Adapters\v5\Interfaces\IGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v5\Interfaces\IKeywordAdapter.cs" />
+    <Compile Include="Adapters\v5\Interfaces\IOnBaseAdapter.cs" />
+    <Compile Include="Adapters\v5\Interfaces\IOnBaseSqlAdapter.cs" />
+    <Compile Include="Adapters\v3\Interfaces\IKeywordAdapter.cs" />
+    <Compile Include="Adapters\OnBaseCreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\OnBaseCreateKeywordAdapter.cs" />
+    <Compile Include="Adapters\v3\KeywordAdapter.cs" />
+    <Compile Include="Adapters\v5\OnBaseAdapter.cs" />
+    <Compile Include="Adapters\v5\KeywordAdapter.cs" />
+    <Compile Include="Adapters\v5\OnBaseCreateDocumentAdapter.cs" />
+    <Compile Include="Adapters\v5\OnBaseSqlAdapter.Count.cs">
+      <DependentUpon>OnBaseSqlAdapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adapters\v5\OnBaseSqlAdapter.cs" />
+    <Compile Include="Adapters\v5\OnBaseSqlAdapter.Search.cs">
+      <DependentUpon>OnBaseSqlAdapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adapters\v5\WindowsFileAdapter.cs" />
+    <Compile Include="Adapters\v4\OnBaseDocument.DocumentTypeCount.Adapter.cs">
+      <DependentUpon>OnBaseDocumentAdapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adapters\v4\OnBaseDocumentAdapter.cs" />
+    <Compile Include="Adapters\v4\OnBaseGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\v4\WorkView\Response.cs" />
+    <Compile Include="Adapters\WindowsFileAdapter.cs" />
+    <Compile Include="Controllers\v5\DocumentController.Count.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v5\DocumentController.cs" />
+    <Compile Include="Controllers\v5\DocumentController.FileLink.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v5\DocumentController.Search.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v5\KeywordController.cs" />
+    <Compile Include="Controllers\v5\MemberController.Count.cs">
+      <DependentUpon>MemberController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v5\MemberController.cs" />
+    <Compile Include="Controllers\v5\MemberController.Search.cs">
+      <DependentUpon>MemberController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v5\ProviderController.Count.cs">
+      <DependentUpon>ProviderController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v5\ProviderController.cs" />
+    <Compile Include="Controllers\v5\ProviderController.Search.cs">
+      <DependentUpon>ProviderController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v4\DocumentController.cs" />
+    <Compile Include="Controllers\v3\DocumentController.cs" />
+    <Compile Include="Controllers\v3\DocumentController.FileLink.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v3\DocumentController.Keywords.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v3\DocumentController.Search.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v4\DocumentController.Search.cs">
+      <DependentUpon>DocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v4\MemberController.cs" />
+    <Compile Include="Controllers\v4\MemberController.Search.cs">
+      <DependentUpon>MemberController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v4\ProviderController.Claims.cs">
+      <DependentUpon>ProviderController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\v4\ProviderController.cs" />
+    <Compile Include="Controllers\v4\ProviderController.Search.cs">
+      <DependentUpon>ProviderController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\v5\BaseDocumentManager.cs" />
+    <Compile Include="Managers\v5\ClaimsManager.cs" />
+    <Compile Include="Managers\v5\CreateDocumentManager.cs" />
+    <Compile Include="Managers\v5\DocumentManager.cs" />
+    <Compile Include="Managers\v5\GetDocumentManager.cs" />
+    <Compile Include="Managers\v5\Interfaces\IClaimsManager.cs" />
+    <Compile Include="Managers\v5\Interfaces\ICreateDocumentManager.cs" />
+    <Compile Include="Managers\v5\Interfaces\IDocumentManager.cs" />
+    <Compile Include="Models\v5\Requests\DownloadRequest.cs" />
+    <Compile Include="Models\v5\ExceptionResponse.cs" />
+    <Compile Include="Models\v5\Interfaces\IDownloadRequest.cs" />
+    <Compile Include="Managers\v5\Interfaces\IGetDocumentManager.cs" />
+    <Compile Include="Managers\v5\Interfaces\IKeywordManager.cs" />
+    <Compile Include="Managers\v5\Interfaces\IMemberManager.cs" />
+    <Compile Include="Managers\v5\Interfaces\IProviderManager.cs" />
+    <Compile Include="Managers\v5\KeywordManager.cs" />
+    <Compile Include="Managers\v5\MemberManager.cs" />
+    <Compile Include="Managers\v5\ProviderManager.cs" />
+    <Compile Include="Managers\v4\ClaimsManager.cs" />
+    <Compile Include="Managers\v4\GetDocumentManager.cs" />
+    <Compile Include="Managers\v4\Interfaces\IClaimsManager.cs" />
+    <Compile Include="Managers\v4\Interfaces\IDocumentManager.cs" />
+    <Compile Include="Managers\v4\Interfaces\IGetDocumentManager.cs" />
+    <Compile Include="Managers\v4\Interfaces\IMemberManager.cs" />
+    <Compile Include="Managers\v4\Interfaces\IProviderManager.cs" />
+    <Compile Include="Managers\v4\ProviderManager.cs" />
+    <Compile Include="Managers\v4\MemberManager.cs" />
+    <Compile Include="Managers\v4\DocumentManager.cs" />
+    <Compile Include="Models\v5\Responses\BaseResponse.cs" />
+    <Compile Include="Models\v5\Requests\BatchUpdateKeywordsRequest.cs" />
+    <Compile Include="Models\v5\ClaimsRequest.cs" />
+    <Compile Include="Models\v5\Interfaces\ISearchResult.cs" />
+    <Compile Include="Models\v5\Requests\SearchRequest.cs" />
+    <Compile Include="Models\v5\CreateDocumentFileLink.cs" />
+    <Compile Include="Models\v5\CreateDocumentRequest.cs" />
+    <Compile Include="Models\v5\CreateDocumentFileLinkResponse.cs" />
+    <Compile Include="Models\v5\Document.cs" />
+    <Compile Include="Models\v5\DocumentKeywordRequest.cs" />
+    <Compile Include="Models\v5\DocumentKeywordResponse.cs" />
+    <Compile Include="Models\v5\Responses\DocumentTypesCountResponse.cs" />
+    <Compile Include="Models\v5\Failure.cs" />
+    <Compile Include="Models\v5\Interfaces\ISearchRequest.cs" />
+    <Compile Include="Models\v5\Interfaces\IFilteredRequest.cs" />
+    <Compile Include="Models\v5\Requests\Request.cs" />
+    <Compile Include="Models\v5\Requests\CountRequest.cs" />
+    <Compile Include="Models\v5\KeywordUpdate.cs" />
+    <Compile Include="Models\v5\Responses\KeywordUpdateResponse.cs" />
+    <Compile Include="Models\v5\KeywordUpdateResult.cs" />
+    <Compile Include="Models\v5\OnBaseDocument.cs" />
+    <Compile Include="Models\v5\Responses\SearchResponse.cs" />
+    <Compile Include="Models\v5\Responses\TotalDocumentCountResponse.cs" />
+    <Compile Include="Models\v5\ValidationProblemResponse.cs" />
+    <Compile Include="Models\v5\ProblemResponse.cs" />
+    <Compile Include="Models\v4\BaseResponse.cs" />
+    <Compile Include="Models\v4\ClaimsRequest.cs" />
+    <Compile Include="Models\v4\Document.cs" />
+    <Compile Include="Models\v4\DocumentTypesCountResponse.cs" />
+    <Compile Include="Models\v4\DocumentTypesCountRequest.cs" />
+    <Compile Include="Models\v4\Failure.cs" />
+    <Compile Include="Models\v4\Interfaces\IDocumentTypesCountRequest.cs" />
+    <Compile Include="Models\v4\OnBaseDocument.cs" />
+    <Compile Include="Models\v4\TotalDocumentCountRequest.cs" />
+    <Compile Include="Models\v4\TotalDocumentCountResponse.cs" />
+    <Compile Include="Models\v4\ValidationProblemResponse.cs" />
+    <Compile Include="Models\v3\DocumentKeywordRequest.cs" />
+    <Compile Include="Managers\CreateDocumentManager.cs" />
+    <Compile Include="Managers\Interfaces\ICreateDocumentManager.cs" />
+    <Compile Include="Managers\v3\Interfaces\IKeywordManager.cs" />
+    <Compile Include="Managers\v3\KeywordManager.cs" />
+    <Compile Include="Models\v3\BaseResponse.cs" />
+    <Compile Include="Models\CreateDocumentFileLink.cs" />
+    <Compile Include="Models\CreateDocumentFileLinkRequest.cs" />
+    <Compile Include="Models\CreateDocumentFileLinkResponse.cs" />
+    <Compile Include="Models\KeywordUpdateResponse.cs" />
+    <Content Include="Web\Content\bootstrap-theme.css" />
+    <Content Include="Web\Content\bootstrap-theme.min.css" />
+    <Content Include="Web\Content\bootstrap.css" />
+    <Content Include="Web\Content\bootstrap.min.css" />
+    <Content Include="Web\Content\processing.gif" />
+    <Content Include="Web\Content\Site.css" />
+    <Content Include="Web\LegalExport.aspx" />
+    <Content Include="Web\Scripts\app\app.datamodel.js" />
+    <Content Include="Web\Scripts\app\app.viewmodel.js" />
+    <Content Include="Web\Scripts\app\common.js" />
+    <Content Include="Web\Scripts\app\home.viewmodel.js" />
+    <Content Include="Web\Scripts\app\_run.js" />
+    <Content Include="Web\Scripts\bootstrap.js" />
+    <Content Include="Web\Scripts\bootstrap.min.js" />
+    <None Include="Web\Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Web\Scripts\jquery-3.4.1.js" />
+    <Content Include="Web\Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Web\Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Web\Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Web\Scripts\knockout-3.5.0.debug.js" />
+    <Content Include="Web\Scripts\knockout-3.5.0.js" />
+    <Content Include="Web\Scripts\knockout.validation.js" />
+    <Content Include="Web\Scripts\knockout.validation.min.js" />
+    <Content Include="Web\Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web\Scripts\sammy-0.7.5.js" />
+    <Content Include="Web\Scripts\sammy-0.7.5.min.js" />
+    <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.0.js" />
+    <Content Include="Scripts\jquery-3.7.0.min.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web\Content\bootstrap-theme.css.map" />
+    <Content Include="Web\Content\bootstrap-theme.min.css.map" />
+    <Content Include="Web\Content\bootstrap.css.map" />
+    <Content Include="Web\Content\bootstrap.min.css.map" />
+    <Content Include="Web\Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Web\Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Web\Scripts\knockout.validation.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\Interfaces\IKeywordAdapter.cs" />
+    <Compile Include="Adapters\KeywordAdapter.cs" />
+    <Compile Include="Models\OnBaseDocument.cs" />
+    <Compile Include="Adapters\OnBaseDocumentAdapter.cs" />
+    <Compile Include="Adapters\Interfaces\ISearchDocumentAdapter.cs" />
+    <Compile Include="Adapters\Interfaces\IGetDocumentAdapter.cs" />
+    <Compile Include="Adapters\OnBaseGetDocumentAdapter.cs" />
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Models\BatchUpdateKeywordsRequest.cs" />
+    <Compile Include="Controllers\v2\DocumentController.cs" />
+    <Compile Include="Controllers\v1\DocumentController.cs" />
+    <Compile Include="Models\KeywordUpdate.cs" />
+    <Compile Include="DependencyModule.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\Interfaces\IKeywordManager.cs" />
+    <Compile Include="Managers\BaseDocumentManager.cs" />
+    <Compile Include="Managers\DocumentManager.cs" />
+    <Compile Include="Managers\GetDocumentManager.cs" />
+    <Compile Include="Managers\Interfaces\IGetDocumentManager.cs" />
+    <Compile Include="Managers\Interfaces\IMemberDocumentManager.cs" />
+    <Compile Include="Managers\Interfaces\IDocumentManager.cs" />
+    <Compile Include="Managers\Interfaces\IProviderDocumentManager.cs" />
+    <Compile Include="Managers\KeywordManager.cs" />
+    <Compile Include="Managers\ProviderDocumentManager.cs" />
+    <Compile Include="Managers\MemberDocumentManager.cs" />
+    <Compile Include="Models\v3\Failure.cs" />
+    <Compile Include="Models\v3\DocumentKeywordResponse.cs" />
+    <Compile Include="Models\v3\KeywordUpdateResponse.cs" />
+    <Compile Include="Models\v3\KeywordUpdateResult.cs" />
+    <Compile Include="Models\v3\ValidationProblemResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libman.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StringResouces.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResouces.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64777</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59578/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
+    <ItemGroup>
+      <RoslynFiles Include="$(CscToolPath)\*" />
+    </ItemGroup>
+    <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
+    <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
+  </Target>
+  <Import Project="..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('..\..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
