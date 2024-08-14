@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+		<AssemblyName>CareSource.WC.Entities</AssemblyName>
+		<RootNamespace>CareSource.WC.Entities</RootNamespace>
+		<Version>4.3.0</Version>
+		<Company>CareSource</Company>
+		<Authors>Workflow &amp; Collaboration Team</Authors>
+		<Description>Data models for W&amp;C projects</Description>
+		<Copyright>2019-2020</Copyright>
+		<RepositoryUrl>https://tfs.caresource.corp/tfs/CS/ALM/_git/CareSource.WC.Entities</RepositoryUrl>
+		<RepositoryType>GIT</RepositoryType>
+		<PackageId>CareSource.WC.Entities</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Requests\v3\" />
+	</ItemGroup>
+</Project>
