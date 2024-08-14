@@ -1,0 +1,41 @@
+using System.Web.Http;
+
+using Unity.AspNet.WebApi;
+
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(CareSource.WC.OnBase.Core.DependencyInjection.UnityWebApiActivator)
+    , nameof(CareSource.WC.OnBase.Core.DependencyInjection.UnityWebApiActivator.Start))]
+[assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(CareSource.WC.OnBase.Core.DependencyInjection.UnityWebApiActivator)
+    , nameof(CareSource.WC.OnBase.Core.DependencyInjection.UnityWebApiActivator.Shutdown))]
+
+namespace CareSource.WC.OnBase.Core.DependencyInjection
+{
+    /// <summary>
+    /// Provides the bootstrapping for integrating Unity with WebApi when it is hosted in ASP.NET.
+    /// </summary>
+    public static class UnityWebApiActivator
+    {
+        /// <summary>
+        /// Integrates Unity when the application starts.
+        /// </summary>
+        public static void Start() 
+        {
+            //Added to start Log4Net correctly.
+            log4net.Config.XmlConfigurator.Configure();
+
+            // Use UnityHierarchicalDependencyResolver if you want to use
+            // a new child container for each IHttpController resolution.
+            var resolver = new UnityHierarchicalDependencyResolver(UnityConfig.Container);
+            //var resolver = new UnityDependencyResolver(UnityConfig.Container);
+
+            GlobalConfiguration.Configuration.DependencyResolver = resolver;
+        }
+
+        /// <summary>
+        /// Disposes the Unity container when the application is shut down.
+        /// </summary>
+        public static void Shutdown()
+        {
+            UnityConfig.Container.Dispose();
+        }
+    }
+}
