@@ -1,0 +1,6 @@
+@WC.Services.CreateGrievanceAppeals.Dotnet8_HostAddress = http://localhost:5062
+
+GET {{WC.Services.CreateGrievanceAppeals.Dotnet8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
