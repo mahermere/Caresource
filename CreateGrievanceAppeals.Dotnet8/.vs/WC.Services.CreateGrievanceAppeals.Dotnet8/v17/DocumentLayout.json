@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DFCC526C-1018-458F-8EFA-08CED2B4E54C}|src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\creategrievanceappeals.dotnet8\\src\\wc.services.creategrievanceappeals.dotnet8\\wc.services.creategrievanceappeals.dotnet8.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DFCC526C-1018-458F-8EFA-08CED2B4E54C}|src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj|solutionrelative:src\\wc.services.creategrievanceappeals.dotnet8\\wc.services.creategrievanceappeals.dotnet8.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFCC526C-1018-458F-8EFA-08CED2B4E54C}|src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\creategrievanceappeals.dotnet8\\src\\wc.services.creategrievanceappeals.dotnet8\\wc.services.creategrievanceappeals.dotnet8.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{DFCC526C-1018-458F-8EFA-08CED2B4E54C}|src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj|solutionrelative:src\\wc.services.creategrievanceappeals.dotnet8\\wc.services.creategrievanceappeals.dotnet8.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WC.Services.CreateGrievanceAppeals.Dotnet8",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "RelativeDocumentMoniker": "src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "RelativeToolTip": "src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-30T04:33:24.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "RelativeDocumentMoniker": "src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "RelativeToolTip": "src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-30T04:30:30.764Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

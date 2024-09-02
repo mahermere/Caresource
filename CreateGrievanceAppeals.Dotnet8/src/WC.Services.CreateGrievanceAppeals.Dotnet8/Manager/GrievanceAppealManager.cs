@@ -128,6 +128,7 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
                             $@"{loggerInit} {"Found AG - Grievance Streamline API Form II"}");
 
                         eFormProps = app.Core.Storage.CreateStoreNewUnityFormProperties(template1);
+                        
 
                         if (null == eFormProps)
                         {
@@ -1529,16 +1530,14 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.EnrollmentEndDate))
                 {
-                    eFormProps.AddKeyword(
-                        "Enrollment Term Date",
-                        Convert.ToDateTime(grievanceAppealsData.EnrollmentEndDate));
+                    DateTime.TryParseExact(grievanceAppealsData.EnrollmentEndDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime enrollmentDt);
+                    eFormProps.AddKeyword("Enrollment Term Date", enrollmentDt);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.EnrollmentStartDate))
                 {
-                    eFormProps.AddKeyword(
-                        "Enrollment Effective Date",
-                        Convert.ToDateTime(grievanceAppealsData.EnrollmentStartDate));
+                    DateTime.TryParseExact(grievanceAppealsData.EnrollmentStartDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime enrollmentDt);
+                    eFormProps.AddKeyword("Enrollment Effective Date",enrollmentDt);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.ESBGUID))
@@ -1571,9 +1570,8 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.InitiationDate))
                 {
-                    eFormProps.AddKeyword(
-                        "Occurrence Date",
-                        Convert.ToDateTime(grievanceAppealsData.InitiationDate));
+                    DateTime.TryParseExact(grievanceAppealsData.InitiationDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime initiationDt);
+                    eFormProps.AddKeyword("Occurrence Date", initiationDt);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.LinkReason))
@@ -1613,9 +1611,8 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.MemberDOB))
                 {
-                    eFormProps.AddKeyword(
-                        "AC: Patient Date of Birth",
-                        Convert.ToDateTime(grievanceAppealsData.MemberDOB));
+                    DateTime.TryParseExact(grievanceAppealsData.MemberDOB, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dtDOB);
+                    eFormProps.AddKeyword("AC: Patient Date of Birth", dtDOB);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.MemberEMail))
@@ -1984,16 +1981,14 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.ReceivedDate))
                 {
-                    eFormProps.AddKeyword(
-                        "Case Corporate Received Date",
-                        Convert.ToDateTime(grievanceAppealsData.ReceivedDate));
+                    DateTime.TryParseExact(grievanceAppealsData.ReceivedDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dtReceivedDate);
+                    eFormProps.AddKeyword("Case Corporate Received Date",dtReceivedDate);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.RepresentativeTermDate))
                 {
-                    eFormProps.AddKeyword(
-                        "Case Appointment of Representative End Date",
-                        Convert.ToDateTime(grievanceAppealsData.RepresentativeTermDate));
+                    DateTime.TryParseExact(grievanceAppealsData.RepresentativeTermDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime termDate);
+                    eFormProps.AddKeyword("Case Appointment of Representative End Date", termDate);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.Resolution1))
@@ -2162,9 +2157,8 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPBeginDOS))
                 {
-                    eFormProps.AddKeyword(
-                        "Begin DOS",
-                        Convert.ToDateTime(grievanceAppealsData.PPBeginDOS));
+                    DateTime.TryParseExact(grievanceAppealsData.PPBeginDOS, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime ppBiginDos);
+                    eFormProps.AddKeyword("Begin DOS",ppBiginDos);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.CallInMethod))
@@ -2190,16 +2184,14 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPDateOfService))
                 {
-                    eFormProps.AddKeyword(
-                        "Date of Service",
-                        Convert.ToDateTime(grievanceAppealsData.PPDateOfService));
+                    DateTime.TryParseExact(grievanceAppealsData.PPDateOfService, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime serviceDt);
+                    eFormProps.AddKeyword("Date of Service",serviceDt);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.ReceivedDate))
                 {
-                    eFormProps.AddKeyword(
-                        "Date Received",
-                        Convert.ToDateTime(grievanceAppealsData.ReceivedDate));
+                    DateTime.TryParseExact(grievanceAppealsData.ReceivedDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime receivedDt);
+                    eFormProps.AddKeyword("Date Received", receivedDt);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPDaysOld))
@@ -2218,9 +2210,8 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPEndDOS))
                 {
-                    eFormProps.AddKeyword(
-                        "End DOS",
-                        Convert.ToDateTime(grievanceAppealsData.PPEndDOS));
+                    DateTime.TryParseExact(grievanceAppealsData.PPEndDOS, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime endDos);
+                    eFormProps.AddKeyword("End DOS", endDos);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPEnrolleeName))
@@ -2324,9 +2315,8 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPSignatureDate))
                 {
-                    eFormProps.AddKeyword(
-                        "Signature Date",
-                        Convert.ToDateTime(grievanceAppealsData.PPSignatureDate));
+                    DateTime.TryParseExact(grievanceAppealsData.PPSignatureDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime signatureDt);
+                    eFormProps.AddKeyword("Signature Date", signatureDt);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.Status))
@@ -2478,9 +2468,8 @@ namespace WC.Services.CreateGrievanceAppeals.Dotnet8.Manager
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPDateOfService))
                 {
-                    eFormProps.AddKeyword(
-                        "Date of Service",
-                        Convert.ToDateTime(grievanceAppealsData.PPDateOfService));
+                    DateTime.TryParseExact(grievanceAppealsData.PPDateOfService, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dtServiceDate);
+                    eFormProps.AddKeyword("Date of Service",dtServiceDate);
                 }
 
                 if (!string.IsNullOrEmpty(grievanceAppealsData.PPDisputeId))

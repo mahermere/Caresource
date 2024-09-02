@@ -1,0 +1,177 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\test\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+        "projectName": "WC.Services.CreateGrievanceAppeals.Dotnet8",
+        "projectPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj",
+        "packagesPath": "C:\\Users\\jyoti.shah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jyoti.shah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\test\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\test\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests.csproj",
+        "projectName": "WC.Services.CreateGrievanceAppeals.Dotnet8.Tests",
+        "projectPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\test\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests.csproj",
+        "packagesPath": "C:\\Users\\jyoti.shah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\test\\WC.Services.CreateGrievanceAppeals.Dotnet8.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jyoti.shah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj": {
+                "projectPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\CreateGrievanceAppeals.Dotnet8\\src\\WC.Services.CreateGrievanceAppeals.Dotnet8\\WC.Services.CreateGrievanceAppeals.Dotnet8.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
