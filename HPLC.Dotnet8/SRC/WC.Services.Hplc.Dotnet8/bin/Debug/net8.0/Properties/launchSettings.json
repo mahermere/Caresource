@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "WC.Services.Hplc.Dotnet8": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:59515;http://localhost:59516"
+    }
+  }
+}

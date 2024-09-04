@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc.dotnet8\\src\\wc.services.hplc.dotnet8\\managers\\datasetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|solutionrelative:src\\wc.services.hplc.dotnet8\\managers\\datasetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc.dotnet8\\src\\wc.services.hplc.dotnet8\\controllers\\datasetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|solutionrelative:src\\wc.services.hplc.dotnet8\\controllers\\datasetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc.dotnet8\\src\\wc.services.hplc.dotnet8\\onbaseconnectionadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|solutionrelative:src\\wc.services.hplc.dotnet8\\onbaseconnectionadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc.dotnet8\\src\\wc.services.hplc.dotnet8\\adapters\\workview\\adapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|solutionrelative:src\\wc.services.hplc.dotnet8\\adapters\\workview\\adapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc.dotnet8\\src\\wc.services.hplc.dotnet8\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|solutionrelative:src\\wc.services.hplc.dotnet8\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc.dotnet8\\src\\wc.services.hplc.dotnet8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|solutionrelative:src\\wc.services.hplc.dotnet8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc.dotnet8\\src\\wc.services.hplc.dotnet8\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49BA5B4-2B88-494C-9376-ECF24DAFA766}|SRC\\WC.Services.Hplc.Dotnet8\\WC.Services.Hplc.Dotnet8.csproj|solutionrelative:src\\wc.services.hplc.dotnet8\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2456D015-1A7A-4882-95D0-7F0994D3BA19}|..\\HPLC\\SRC\\WC.Services.Hplc.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\hplc\\src\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataSetManager.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Managers\\DataSetManager.cs",
+              "RelativeDocumentMoniker": "SRC\\WC.Services.Hplc.Dotnet8\\Managers\\DataSetManager.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Managers\\DataSetManager.cs",
+              "RelativeToolTip": "SRC\\WC.Services.Hplc.Dotnet8\\Managers\\DataSetManager.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAiwGwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T09:03:17.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Program.cs",
+              "RelativeDocumentMoniker": "SRC\\WC.Services.Hplc.Dotnet8\\Program.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Program.cs",
+              "RelativeToolTip": "SRC\\WC.Services.Hplc.Dotnet8\\Program.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAiwHAAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T01:28:20.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataSetController.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\DataSetController.cs",
+              "RelativeDocumentMoniker": "SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\DataSetController.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\DataSetController.cs",
+              "RelativeToolTip": "SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\DataSetController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAUwEwAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T01:20:00.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Adapter.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Adapters\\WorkView\\Adapter.cs",
+              "RelativeDocumentMoniker": "SRC\\WC.Services.Hplc.Dotnet8\\Adapters\\WorkView\\Adapter.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Adapters\\WorkView\\Adapter.cs",
+              "RelativeToolTip": "SRC\\WC.Services.Hplc.Dotnet8\\Adapters\\WorkView\\Adapter.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAUwDwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T03:19:28.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OnBaseConnectionAdapter.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\OnBaseConnectionAdapter.cs",
+              "RelativeDocumentMoniker": "SRC\\WC.Services.Hplc.Dotnet8\\OnBaseConnectionAdapter.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\OnBaseConnectionAdapter.cs",
+              "RelativeToolTip": "SRC\\WC.Services.Hplc.Dotnet8\\OnBaseConnectionAdapter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T03:19:34.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\appsettings.json",
+              "RelativeDocumentMoniker": "SRC\\WC.Services.Hplc.Dotnet8\\appsettings.json",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\appsettings.json",
+              "RelativeToolTip": "SRC\\WC.Services.Hplc.Dotnet8\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-04T01:23:48.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\RequestController.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC.Dotnet8\\SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "SRC\\WC.Services.Hplc.Dotnet8\\Controllers\\RequestController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T09:16:26.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC\\SRC\\App_Start\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "..\\HPLC\\SRC\\App_Start\\SwaggerConfig.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\HPLC\\SRC\\App_Start\\SwaggerConfig.cs",
+              "RelativeToolTip": "..\\HPLC\\SRC\\App_Start\\SwaggerConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T07:24:35.005Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

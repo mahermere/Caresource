@@ -1,0 +1,6 @@
+@WC.Services.Hplc.Dotnet8_HostAddress = http://localhost:5135
+
+GET {{WC.Services.Hplc.Dotnet8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
