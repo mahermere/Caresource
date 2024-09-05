@@ -1,0 +1,11 @@
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\bin\Debug\netstandard2.0\CareSource.WC.Entities.deps.json
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\bin\Debug\netstandard2.0\CareSource.WC.Entities.dll
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\bin\Debug\netstandard2.0\CareSource.WC.Entities.pdb
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\Entities.sourcelink.json
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\CareSource.WC.Entities.dll
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\WorkflowAndCollab.Entities\src\WC.Entities\obj\Debug\netstandard2.0\CareSource.WC.Entities.pdb
