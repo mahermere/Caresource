@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Ov1U0bQlcu9DUxNmqnq92D4H/lQONbfOqeKP1kvuINE=",
+  "Source": "WC.Services.HplcManagement.Dotnet8",
+  "BasePath": "_content/WC.Services.HplcManagement.Dotnet8",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
