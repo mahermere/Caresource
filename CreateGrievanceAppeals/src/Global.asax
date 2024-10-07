@@ -1,1 +1,0 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="CareSource.WC.Services.CreateGrievanceAppeals.WebApiApplication" Language="C#" %>
