@@ -1,0 +1,247 @@
+{
+  "CorrelationGuid": "929b0dae-52bb-4c23-a4d5-26c24cdf6e21",
+  "SourceApplication": "Secure Forms",
+  "UserId": "Secure Forms",
+  "RequestData": {
+    "ClassName": "Request",
+    "Related": [
+      {
+        "ClassName": "Product",
+        "Related": [],
+        "Properties": {
+          "ProductName": "OH - Marketplace (Just4me)"
+        }
+      },
+      {
+        "ClassName": "Product",
+        "Related": [],
+        "Properties": {
+          "ProductName": "OH - Medicaid"
+        }
+      },
+      {
+        "ClassName": "TIN",
+        "Related": [],
+        "Properties": {
+          "EntityTIN": "11-1111111"
+        }
+      },
+      {
+        "ClassName": "Provider",
+        "Related": [
+          {
+            "ClassName": "Location",
+            "Related": [
+              {
+                "ClassName": "Phone",
+                "Related": [],
+                "Properties": {
+                  "PhoneNumber": "7895673456",
+                  "PhoneType": "Office"
+                }
+              },
+              {
+                "ClassName": "Phone",
+                "Related": [],
+                "Properties": {
+                  "PhoneNumber": "",
+                  "PhoneType": "Fax"
+                }
+              }
+            ],
+            "Properties": {
+              "ActionType": "Add",
+              "AddressType": "Practice",
+              "Capacity": "",
+              "City": "Columbus",
+              "County": null,
+              "GenderRestrictions": null,
+              "MaxAge": "",
+              "MinAge": "",
+              "PostalCode": "56787",
+              "PrimaryLocation": "True",
+              "State": "AR",
+              "Street1": "123 Anywhere Ave",
+              "Street2": null
+            }
+          },
+          {
+            "ClassName": "Location",
+            "Related": [],
+            "Properties": {
+              "ActionType": "Add",
+              "AddressType": "Mailing",
+              "City": "Somewhere",
+              "County": null,
+              "PostalCode": "34576",
+              "State": "AZ",
+              "Street1": "123 Nowhere St",
+              "Street2": null
+            }
+          },
+          {
+            "ClassName": "Location",
+            "Related": [],
+            "Properties": {
+              "ActionType": "Add",
+              "AddressType": "Remit",
+              "City": "Somewhere",
+              "County": null,
+              "PostalCode": "34576",
+              "State": "AZ",
+              "Street1": "123 Nowhere St",
+              "Street2": null
+            }
+          }
+        ],
+        "Properties": {
+          "AcceptingNewPatients": "False",
+          "AcceptingNewMedicaidPatients": "YES",
+          "ActionType": "Adding",
+          "ADA": "False",
+          "ADAAccessibleExamRooms": "NO",
+          "ADAAccessLifts": "NO",
+          "ADAAccessScales": "NO",
+          "ADABathroomandStallAccess": "NO",
+          "ADAGrabBarsinBathroom": "NO",
+          "ADAGrabBarsinHallway": "NO",
+          "ADAWheelchairAccess": "NO",
+          "ADAWideEntryAccess": "NO",
+          "ASL": "",
+          "AtypicalProvider": "YES",
+          "BoardCertified": null,
+          "BusRoute": "NO",
+          "CAQHNumber": "555555555555555",
+          "ContUpdatesSameasRemitAddress": true,
+          "Counties": null,
+          "CSRNumber": null,
+          "CulturalCompetency": "NO",
+          "CulturalTraining": null,
+          "DEANumber": null,
+          "Degree": "BCBA",
+          "DisplayinDirectory": "NO",
+          "DOB": "8/1/2000 12:00:00 AM",
+          "Email": "jeremy.barfell@caresource.com",
+          "EmailAddress": "jeremy.barfell@caresource.com",
+          "EveningHours": "NO",
+          "ExclusionReason": null,
+          "FirstName": "Jacka",
+          "Friday": "",
+          "Gender": "",
+          "GroupAffiliations": null,
+          "GroupMedicaid": null,
+          "GroupMedicaidMultiLoc": null,
+          "GroupMedicare": "767867876787678",
+          "GroupNPI": null,
+          "GroupNPIMultiLoc": null,
+          "GroupTaxonomy": null,
+          "HospitalAffiliations": null,
+          "HospitalBasedPhysician": "NO",
+          "Hospitalist": "NO",
+          "IndividualMedicare": null,
+          "Language": null,
+          "LanguageOther": null,
+          "LastName": "Smith",
+          "LicenseNumber": null,
+          "LicenseState": null,
+          "LocumTenens": "NO",
+          "MailingSameAsRemitAddress": true,
+          "MedicaidID": "444444444444444",
+          "MedicaidState": "AR",
+          "MedicareID": null,
+          "MiddleName": null,
+          "Monday": "06:00AM-12:30PM",
+          "MultiLocation": "NO",
+          "MultipleLocations": "NO",
+          "NPI": "444444444444444",
+          "NPSpecialtySupported": "NO",
+          "PCP": "",
+          "PhoneNumber": "7895673456",
+          "ProviderGroupWebsite": "
+http://www.test.com"
+,
+          "ProviderLinguisticCapabilities": null,
+          "ProviderNotes": null,
+          "ProviderRaceEthnicity": null,
+          "ProviderType": "Practitioner",
+          "RenderingProviders": "NO",
+          "Saturday": "",
+          "SecondarySpecialty": null,
+          "SecondaryTaxonomyNumber": "",
+          "ServeCSHCN": "NO",
+          "SubmitterFirstName": "Jack",
+          "SubmitterLastName": "Jack",
+          "SSN": "451-24-5458",
+          "Specialty": "Ambulance",
+          "Sunday": "",
+          "TaxonomyCode": "341600000X",
+          "TelemedicineServicesProvided": "False",
+          "TelemedicineSite": "NO",
+          "Thursday": "",
+          "TIN": "11-1111111",
+          "Tuesday": "",
+          "Wednesday": "",
+          "WeekendHours": "NO"
+        }
+      }
+    ],
+    "Properties": {
+      "CaresourceReceivedDate": "8/19/2024 2:01:08 PM",
+      "ChangeEffectiveDate": "8/19/2024 2:01:08 PM",
+      "ContactFirstName": "Jack",
+      "ContactLastName": "Smith",
+      "ContactName": "Jack Smith",
+      "ContactPhoneExtension": null,
+      "OfcContactPhoneExt": null,
+      "ContactPhoneNumber": "1235674567",
+      "ContractCode": null,
+      "ContractualUpdatesAddressLine1": "123 Nowhere St",
+      "ContractualUpdatesAddressLine2": null,
+      "ContractualUpdatesAddressCity": "Somewhere",
+      "ContractualUpdatesAddressState": "AZ",
+      "ContractualUpdatesAddressZipCode": "34576",
+      "DBAName": null,
+      "EntityContactEmail": "jeremy.barfell@caresource.com",
+      "EntityName": "The Spa",
+      "GroupMedicaidID": "666666767676767",
+      "GroupMedicareID": "767867876787678",
+      "HealthPartnerAgreementType": null,
+      "PrimaryState": "AR",
+      "RequestSource": "Secure Forms",
+      "RequestType": "ONBOARDING",
+      "SignatoryEmail": "test@caresource.com",
+      "SignatoryFirstName": "Test",
+      "SignatoryLastName": "Smith",
+      "SignatoryName": "Test Smith",
+      "SignatoryTitle": "The",
+      "TaxIDChange": "NO",
+      "PriorTaxIDNumber": null,
+      "IRSNameChange": "NO",
+      "PriorIRSName": null,
+      "MailingSameAsRemit": true,
+      "UpdateSameAsRemit": true,
+      "CommonAddressforReuse": "123 Anywhere Ave",
+      "Street2Address": null,
+      "City": "Columbus",
+      "State": "AR",
+      "ZipCode": "56787",
+      "County": null,
+      "PhoneNumber": "7895673456",
+      "FaxNumber": null,
+      "ProviderCount": "1",
+      "AtypicalProvider": "YES",
+      "MedicaidState": "AZ",
+      "MultiLocations": "NO",
+      "GroupNPIMultiLoc": null,
+      "GroupMedicaidMultiLoc": "66666676",
+      "ExternalViewLink": "
+http://secureforms.caresource.local/en/HealthPartnerContract?form=954b0c2e783def7a5cc4893504342442c13ef461c451e07e62a038488a7f655c61c1f5f283589ac82f843d26908e90dad7c8875a7f2273a894df9f4c703a7ff772f4b17c2af4d422303adeff8ff5583a"
+,
+      "InternalViewLink": "
+http://secureforms.caresource.local/en/HealthPartnerContract?form=954b0c2e783def7a5cc4893504342442c13ef461c451e07e62a038488a7f655c61c1f5f283589ac82f843d26908e90dad7c8875a7f2273a894df9f4c703a7ff7b927aa389065e6e95e42986b068929d1"
+,
+      "FinalDeleteLink": "
+https://cert-portalservices.caresource.corp:8305//file/8349"
+    }
+  }
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
