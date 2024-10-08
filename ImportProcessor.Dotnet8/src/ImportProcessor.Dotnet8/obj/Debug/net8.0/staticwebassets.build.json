@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Fxu5/bD07XwFJjT29TUMny6YAyravV6smaukCbp2gHI=",
+  "Source": "WC.Services.ImportProcessor.Dotnet8",
+  "BasePath": "_content/WC.Services.ImportProcessor.Dotnet8",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,6 @@
+@ImportProcessor.Dotnet8_HostAddress = http://localhost:5072
+
+GET {{ImportProcessor.Dotnet8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

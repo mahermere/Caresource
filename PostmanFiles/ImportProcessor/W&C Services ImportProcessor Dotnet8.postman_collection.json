@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "05e8b90f-2e13-496c-a64b-c7577e02529b",
+		"name": "W&C Services ImportProcessor Dotnet8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37782135",
+		"_collection_link": "https://speeding-resonance-336720.postman.co/workspace/Caresource~0a952028-6cc7-44d8-bf07-7aa2d4c48e53/collection/37756819-05e8b90f-2e13-496c-a64b-c7577e02529b?action=share&source=collection_link&creator=37782135"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "ImportProcessorController",
+					"item": [
+						{
+							"name": "CPS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{hostnameImportProcessor}}/api/ImportProcessor/CPS",
+									"host": [
+										"{{hostnameImportProcessor}}"
+									],
+									"path": [
+										"api",
+										"ImportProcessor",
+										"CPS"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "COBRNL",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{hostnameImportProcessor}}/api/ImportProcessorController/COBRNL",
+									"host": [
+										"{{hostnameImportProcessor}}"
+									],
+									"path": [
+										"api",
+										"ImportProcessorController",
+										"COBRNL"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CBRL",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{hostnameImportProcessor}}/api/ImportProcessorController/CBRL",
+									"host": [
+										"{{hostnameImportProcessor}}"
+									],
+									"path": [
+										"api",
+										"ImportProcessorController",
+										"CBRL"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "EOB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{hostnameImportProcessor}}/api/ImportProcessorController/EOB",
+									"host": [
+										"{{hostnameImportProcessor}}"
+									],
+									"path": [
+										"api",
+										"ImportProcessorController",
+										"EOB"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

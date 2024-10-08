@@ -1,0 +1,369 @@
+2024-10-07 08:10:31,606 [5] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 11675246-77d8-4585-b42a-85c8c0f48a52
+2024-10-07 08:10:31,842 [5] ERROR Program [(null)] - Unsuccessful Import for Guid: 11675246-77d8-4585-b42a-85c8c0f48a52.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\CPS\Processing'.
+   at System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String path, Boolean ignoreNotFound)
+   at System.IO.Enumeration.FileSystemEnumerator`1.Init()
+   at System.IO.Enumeration.FileSystemEnumerable`1..ctor(String directory, FindTransform transform, EnumerationOptions options, Boolean isNormalized)
+   at System.IO.Enumeration.FileSystemEnumerableFactory.UserFiles(String directory, String expression, EnumerationOptions options)
+   at System.IO.Directory.InternalEnumeratePaths(String path, String searchPattern, SearchTarget searchTarget, EnumerationOptions options)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 90
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-07 08:10:31,934 [5] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 08:21:06,307 [21] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: a6c9f551-49ee-41aa-9b48-1e3a5925702d
+2024-10-07 08:21:06,317 [21] INFO  Program [(null)] - Claims Service is currently busy processing a batch.
+2024-10-07 08:21:06,317 [21] INFO  Program [(null)] - Successful Import for Guid: a6c9f551-49ee-41aa-9b48-1e3a5925702d.
+2024-10-07 08:21:06,318 [21] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 08:21:06,319 [21] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 08:27:42,712 [7] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 18ea771a-48e8-4ab5-bfdb-ae8df0ada913
+2024-10-07 08:27:56,284 [7] INFO  Program [(null)] - Claims Service is currently busy processing a batch.
+2024-10-07 08:28:11,019 [7] INFO  Program [(null)] - Successful Import for Guid: 18ea771a-48e8-4ab5-bfdb-ae8df0ada913.
+2024-10-07 08:28:12,382 [7] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 08:28:14,918 [7] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 09:09:34,574 [12] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 0da3ab22-45f8-4d63-9d09-555bcc099b49
+2024-10-07 09:10:10,461 [12] INFO  Program [(null)] - Successful Import for Guid: 0da3ab22-45f8-4d63-9d09-555bcc099b49.
+2024-10-07 09:10:10,465 [12] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 09:10:10,467 [12] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 09:10:46,891 [13] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 7d14d2ce-5fd5-48bc-ac96-e7b51add2af8
+2024-10-07 09:12:54,775 [9] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 2c9ffd0f-e975-4985-9785-f2d9aa3b0e4f
+2024-10-07 09:40:00,075 [13] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 688d5a77-bcda-49d3-978f-9a4b512dd847
+2024-10-07 09:41:30,895 [13] ERROR Program [(null)] - Unsuccessful Import for Guid: 688d5a77-bcda-49d3-978f-9a4b512dd847.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\CPS\Error\dummy.zip'.
+   at System.IO.FileSystem.CopyFile(String sourceFullPath, String destFullPath, Boolean overwrite)
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CopyFileTo(String file, String destinationFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 632
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CleanupFolders(String destinationFolder, String cpsDirectory, String processingLocation, String filename, String targetFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 607
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 163
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-07 09:41:30,970 [13] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 09:41:43,668 [17] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: d17d58c4-a083-4d61-8a47-4e8b6188edf7
+2024-10-07 09:41:59,556 [17] INFO  Program [(null)] - Successful Import for Guid: d17d58c4-a083-4d61-8a47-4e8b6188edf7.
+2024-10-07 09:42:02,638 [17] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 09:42:05,385 [17] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 09:43:45,121 [12] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 70a9c7d7-7b02-48f2-8121-02922efb339e
+2024-10-07 09:44:04,025 [12] INFO  Program [(null)] - Successful Import for Guid: 70a9c7d7-7b02-48f2-8121-02922efb339e.
+2024-10-07 09:44:06,289 [12] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 09:44:06,290 [12] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 09:45:39,473 [19] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: c3cae340-71ef-4476-be0e-4212f9905c5d
+2024-10-07 09:46:22,308 [19] INFO  Program [(null)] - Successful Import for Guid: c3cae340-71ef-4476-be0e-4212f9905c5d.
+2024-10-07 09:46:22,314 [19] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 09:46:22,316 [19] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 09:46:25,757 [21] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: c2e0815f-1b87-4550-9ad9-ca5ad321fede
+2024-10-07 09:53:15,643 [13] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: fc3fa9f9-ffa4-4daf-8bff-26f76041192e
+2024-10-07 09:54:35,988 [13] ERROR Program [(null)] - Unsuccessful Import for Guid: fc3fa9f9-ffa4-4daf-8bff-26f76041192e.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'WC.Services.ImportProcessor.Dotnet8.Models.v1.Claim[]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'documents[0].document.claims.attributes', line 15, position 17.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 187
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-07 09:54:36,078 [13] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 09:57:45,358 [5] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 33dc252a-e1f1-47f8-8cf3-db0912f77a11
+2024-10-07 09:58:21,157 [5] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-07 10:01:18,581 [10] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 951fd913-52c2-4a61-b580-25134a4eae7c
+2024-10-07 10:01:18,652 [10] INFO  Program [(null)] - Successful Import for Guid: 951fd913-52c2-4a61-b580-25134a4eae7c.
+2024-10-07 10:01:18,652 [10] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 10:01:18,653 [10] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 10:02:48,499 [18] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 06d23130-88e7-479d-ab54-a20967b6d86c
+2024-10-07 10:03:03,779 [18] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-07 10:03:15,421 [18] ERROR Program [(null)] - Unsuccessful Import for Guid: 06d23130-88e7-479d-ab54-a20967b6d86c.
+System.InvalidOperationException: Unable to create ServiceClient. URL is null or empty.
+   at Hyland.Unity.Application.CreateServiceClient(AuthenticationProperties props)
+   at Hyland.Unity.Application.Connect(AuthenticationProperties connectProperties)
+   at WC.Services.ImportProcessor.Dotnet8.Connection.OnBaseConnectionAdapter.Connect() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Connection\OnBaseConnectionAdapter.cs:line 50
+   at WC.Services.ImportProcessor.Dotnet8.Connection.OnBaseConnectionAdapter.get_Application() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Connection\OnBaseConnectionAdapter.cs:line 26
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.DocumentType(Int64 documentTypeId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 329
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 223
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-07 10:03:15,506 [18] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 10:03:41,394 [7] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 0655af82-45fa-4068-b450-6fc88cf73341
+2024-10-07 10:03:41,439 [7] INFO  Program [(null)] - Successful Import for Guid: 0655af82-45fa-4068-b450-6fc88cf73341.
+2024-10-07 10:03:41,439 [7] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 10:03:41,440 [7] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 10:29:06,341 [12] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: d5638e21-c8fe-45f4-a61d-a7d34eaca375
+2024-10-07 10:30:00,529 [12] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-07 10:30:19,549 [12] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-07 10:33:22,330 [12] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: a566b972-3937-47d0-bee2-95daad32f894
+2024-10-07 10:33:23,537 [12] INFO  Program [(null)] - Successful Import for Guid: a566b972-3937-47d0-bee2-95daad32f894.
+2024-10-07 10:33:24,177 [12] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-07 10:33:25,882 [12] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-07 10:43:12,648 [7] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-07 10:43:21,342 [7] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-07 10:43:23,584 [7] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-07 10:43:23,925 [7] INFO  Program [(null)] - Connecting to OnBase Application Server , Url '', and DataSource 'onbasedb'.
+2024-10-08 07:02:07,128 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:02:19,487 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:02:32,486 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:02:33,107 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:02:33,281 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:02:35,091 [10] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:03:01,436 [10] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 33fe7761-ac5e-46e8-b969-db828055600e
+2024-10-08 07:06:02,301 [10] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:07:12,908 [10] ERROR Program [(null)] - Attachment file not found: C:\CPS\\Processing\cpsData\dummy
+2024-10-08 07:07:23,363 [10] ERROR Program [(null)] - An unexpected error occurred. Attachment file not found: C:\CPS\\Processing\cpsData\dummy
+2024-10-08 07:07:25,288 [10] ERROR Program [(null)] - Unsuccessful Import for Guid: 33fe7761-ac5e-46e8-b969-db828055600e.
+System.IO.FileNotFoundException: Attachment file not found: C:\CPS\\Processing\cpsData\dummy
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.CreateDocument(Document document, String cpsProcessingDirectory, Guid correlationGuid, String filename, String documentTypeName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 108
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 361
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 07:07:26,286 [10] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 07:07:31,828 [10] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 07:11:55,228 [7] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:11:55,887 [7] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:11:55,889 [7] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 26ccd69d-1d7d-496a-be66-3336a70f3742
+2024-10-08 07:12:15,772 [7] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:12:15,775 [7] ERROR Program [(null)] - Attachment file not found: C:\CPS\Processing\cpsData\dummy
+2024-10-08 07:12:15,829 [7] ERROR Program [(null)] - An unexpected error occurred. Attachment file not found: C:\CPS\Processing\cpsData\dummy
+2024-10-08 07:12:15,878 [7] ERROR Program [(null)] - Unsuccessful Import for Guid: 26ccd69d-1d7d-496a-be66-3336a70f3742.
+System.IO.FileNotFoundException: Attachment file not found: C:\CPS\Processing\cpsData\dummy
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.CreateDocument(Document document, String cpsProcessingDirectory, Guid correlationGuid, String filename, String documentTypeName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 108
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 361
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 07:12:15,945 [7] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 07:12:16,004 [7] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 07:16:34,636 [9] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:16:35,355 [9] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:16:35,357 [9] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: b5e80f1a-5021-49d8-84bc-0faaf47b3c57
+2024-10-08 07:16:38,905 [9] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:17:41,299 [13] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:17:41,963 [13] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:17:41,965 [13] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 86c50f3f-e101-47be-aff5-975707ed5437
+2024-10-08 07:17:41,993 [13] INFO  Program [(null)] - Successful Import for Guid: 86c50f3f-e101-47be-aff5-975707ed5437.
+2024-10-08 07:17:41,995 [13] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-08 07:17:41,997 [13] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 07:17:42,058 [13] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 07:20:00,703 [16] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:20:00,977 [16] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:20:00,978 [16] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 28c176a8-ddb9-4b1f-85bd-58c4af5dce51
+2024-10-08 07:20:05,024 [16] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:35:53,907 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:35:54,674 [10] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:35:54,676 [10] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: baa8034b-dc04-49b0-9afc-716705ea2ca2
+2024-10-08 07:35:59,522 [10] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:45:06,863 [14] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:45:07,537 [14] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:45:07,539 [14] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 232df090-0d1b-4888-80e8-49ddf95917f6
+2024-10-08 07:45:07,574 [14] INFO  Program [(null)] - Successful Import for Guid: 232df090-0d1b-4888-80e8-49ddf95917f6.
+2024-10-08 07:45:07,575 [14] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-08 07:45:07,575 [14] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 07:45:07,630 [14] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 07:46:25,678 [3] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:46:25,940 [3] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:46:25,955 [3] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 90745198-d999-4cfb-a3fb-035b6b93dbdf
+2024-10-08 07:46:29,184 [3] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:48:27,582 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:48:28,217 [10] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:48:28,220 [10] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 870bdfe8-40e1-48f0-ad0f-ef047339eec6
+2024-10-08 07:48:31,306 [10] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:54:26,597 [19] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:54:27,227 [19] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:54:27,231 [19] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 025e8628-85ed-4ef6-ae7d-ed43d32e6c94
+2024-10-08 07:54:30,366 [19] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 07:55:31,121 [19] ERROR Program [(null)] - Unsuccessful Import for Guid: 025e8628-85ed-4ef6-ae7d-ed43d32e6c94.
+System.IO.IOException: The process cannot access the file 'C:\CPS\Processing\cpsData\dummy.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.DeleteFolder(String destinationFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 620
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CleanupFolders(String destinationFolder, String cpsDirectory, String processingLocation, String filename, String targetFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 600
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 385
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 07:55:31,184 [19] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 07:55:31,247 [19] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 07:58:41,351 [17] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 07:58:41,974 [17] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 07:58:41,977 [17] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 3004e183-9db3-47dd-901f-2a2050656b81
+2024-10-08 07:58:45,253 [17] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 08:00:38,693 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 08:00:39,354 [10] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 08:00:39,357 [10] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 9ccfb190-7b98-4b4d-8422-11d341a0dba5
+2024-10-08 08:00:42,861 [10] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 08:52:11,876 [5] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 08:52:12,556 [5] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 08:52:12,560 [5] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 616120b9-fa3e-4db1-971c-23e8fb143ea5
+2024-10-08 08:52:17,258 [5] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 08:52:17,589 [5] ERROR Program [(null)] - Unsuccessful Import for Guid: 616120b9-fa3e-4db1-971c-23e8fb143ea5.
+System.IO.IOException: The process cannot access the file 'C:\CPS\Processing\cpsData\dummy.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.DeleteFolder(String destinationFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 620
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CleanupFolders(String destinationFolder, String cpsDirectory, String processingLocation, String filename, String targetFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 600
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 385
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 08:52:17,684 [5] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 08:52:17,736 [5] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 08:53:11,471 [7] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 08:53:12,124 [7] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 08:53:12,128 [7] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: c4394248-8add-42af-b6ac-6cef75745ad8
+2024-10-08 08:53:17,140 [7] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 08:53:17,450 [7] ERROR Program [(null)] - Unsuccessful Import for Guid: c4394248-8add-42af-b6ac-6cef75745ad8.
+System.IO.IOException: The process cannot access the file 'C:\CPS\Processing\cpsData\dummy.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.DeleteFolder(String destinationFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 620
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CleanupFolders(String destinationFolder, String cpsDirectory, String processingLocation, String filename, String targetFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 600
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 385
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 08:53:17,501 [7] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 08:53:17,558 [7] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 08:54:28,404 [12] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 08:54:29,042 [12] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 08:54:29,045 [12] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 6b04d26a-e94a-4429-89e7-b8fbfd96f55d
+2024-10-08 08:54:29,077 [12] INFO  Program [(null)] - Successful Import for Guid: 6b04d26a-e94a-4429-89e7-b8fbfd96f55d.
+2024-10-08 08:54:29,077 [12] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-08 08:54:29,078 [12] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 08:54:29,133 [12] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 08:55:12,414 [7] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 08:55:12,660 [7] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 08:55:12,661 [7] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 885a8c24-ef75-4f41-9f24-d6b3fee7930f
+2024-10-08 08:55:15,995 [7] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 08:57:41,867 [13] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 08:57:42,521 [13] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 08:57:42,524 [13] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: b956af72-b83e-4e7d-a92f-ae3594f289e2
+2024-10-08 08:57:42,562 [13] INFO  Program [(null)] - Successful Import for Guid: b956af72-b83e-4e7d-a92f-ae3594f289e2.
+2024-10-08 08:57:42,563 [13] INFO  Program [(null)] - Finished: RNL Import.
+2024-10-08 08:57:42,563 [13] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 08:57:42,620 [13] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 08:58:10,855 [17] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 08:58:11,112 [17] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 08:58:11,113 [17] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 9f15d8c2-49fd-46c7-85af-26c8fcfcb631
+2024-10-08 08:58:14,543 [17] INFO  Program [(null)] - Document Type Name: Medical Report
+2024-10-08 08:58:59,827 [17] ERROR Program [(null)] - An unexpected error occurred. An error occurred within the Unity API: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed
+2024-10-08 08:58:59,879 [17] ERROR Program [(null)] - Unsuccessful Import for Guid: 9f15d8c2-49fd-46c7-85af-26c8fcfcb631.
+Hyland.Unity.UnityAPIException: An error occurred within the Unity API: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed
+ ---> Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed ---> Source: Has been filtered
+TargetSite: Has been filtered
+Exception: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed ---> The stacktrace has been removed. Please contact your administrator and provide error id: c97d1b84-0c91-455e-b9e0-e84da12d66ff to get more information.
+   End of Service Exception from Server.
+The stacktrace has been removed. Please contact your administrator and provide error id: c97d1b84-0c91-455e-b9e0-e84da12d66ff to get more information.
+   --- End of inner exception stack trace ---
+   at Hyland.Unity.UnityServiceClient.Execute(IRequest request)
+   at Hyland.Unity.Services.HylandServices.CoreServiceAccess.Hyland.Unity.Services.ICoreServiceAccess.StoreDocument(IEnumerable`1 pageDataList, StoreNewDocumentProperties props)
+   at Hyland.Unity.Storage.StoreNewDocument(IEnumerable`1 pageDatas, StoreNewDocumentProperties props)
+   at Hyland.Unity.Storage.StoreNewDocument(PageData pageData, StoreNewDocumentProperties props)
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.CreateDocument(Document document, String cpsProcessingDirectory, Guid correlationGuid, String filename, String documentTypeName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 194
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 361
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 08:58:59,977 [17] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 08:59:00,001 [17] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 09:27:40,565 [12] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 09:27:41,226 [12] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 09:27:41,229 [12] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 8d9c97f2-4f6b-4e8f-81a1-36417953f81c
+2024-10-08 09:27:44,367 [12] ERROR Program [(null)] - Document Type name not found for Document Type Id:1248
+2024-10-08 09:27:44,484 [12] ERROR Program [(null)] - Unsuccessful Import for Guid: 8d9c97f2-4f6b-4e8f-81a1-36417953f81c.
+System.IO.InvalidDataException: Document Type name not found for Document Type Id :1248
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.DocumentType(Int64 documentTypeId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 312
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 223
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 09:27:44,550 [12] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 09:27:44,619 [12] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 09:28:33,988 [9] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 09:28:34,288 [9] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 09:28:34,290 [9] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 14804442-bb88-4057-9725-f0ed93e9b5fd
+2024-10-08 09:28:37,648 [9] INFO  Program [(null)] - Document Type Name: CustomerWVDoc
+2024-10-08 09:28:37,944 [9] ERROR Program [(null)] - Unsuccessful Import for Guid: 14804442-bb88-4057-9725-f0ed93e9b5fd.
+System.IO.IOException: The process cannot access the file 'C:\CPS\Processing\cpsData\dummy.pdf' because it is being used by another process.
+   at System.IO.FileSystem.DeleteFile(String fullPath)
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.DeleteFolder(String destinationFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 620
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CleanupFolders(String destinationFolder, String cpsDirectory, String processingLocation, String filename, String targetFolder) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 600
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 385
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 09:28:37,947 [9] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 09:28:38,047 [9] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 09:31:44,808 [13] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 09:31:45,424 [13] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 09:31:45,427 [13] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: c97c0aec-1638-43c8-bdb7-b6d56bb271f3
+2024-10-08 09:31:48,499 [13] INFO  Program [(null)] - Document Type Name: CustomerWVDoc
+2024-10-08 09:31:48,791 [13] ERROR Program [(null)] - An unexpected error occurred. Unable to find keyword types 'Company Name, AccountNumber, Original Filename' in OnBase.
+2024-10-08 09:31:48,835 [13] ERROR Program [(null)] - Unsuccessful Import for Guid: c97c0aec-1638-43c8-bdb7-b6d56bb271f3.
+System.ArgumentException: Unable to find keyword types 'Company Name, AccountNumber, Original Filename' in OnBase.
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.AddKeywordRecordsToDocumentProperties(DocumentType documentType, IDictionary`2 keywords, AddOnlyKeywordModifier newDocumentProperties) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 296
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.CreateDocument(Document document, String cpsProcessingDirectory, Guid correlationGuid, String filename, String documentTypeName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 170
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 361
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 09:31:48,908 [13] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 09:31:48,969 [13] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 09:36:09,988 [13] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 09:36:10,779 [13] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 09:36:10,783 [13] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: ac29dacd-656a-4da3-a653-46b7f8ffe129
+2024-10-08 09:36:14,843 [13] INFO  Program [(null)] - Document Type Name: CustomerWVDoc
+2024-10-08 09:36:32,777 [13] ERROR Program [(null)] - An unexpected error occurred. An error occurred within the Unity API: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed
+2024-10-08 09:36:34,456 [13] ERROR Program [(null)] - Unsuccessful Import for Guid: ac29dacd-656a-4da3-a653-46b7f8ffe129.
+Hyland.Unity.UnityAPIException: An error occurred within the Unity API: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed
+ ---> Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed ---> Source: Has been filtered
+TargetSite: Has been filtered
+Exception: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed ---> The stacktrace has been removed. Please contact your administrator and provide error id: 9bb6d4da-6fd2-4e8a-a32e-f2b82b0ac91c to get more information.
+   End of Service Exception from Server.
+The stacktrace has been removed. Please contact your administrator and provide error id: 9bb6d4da-6fd2-4e8a-a32e-f2b82b0ac91c to get more information.
+   --- End of inner exception stack trace ---
+   at Hyland.Unity.UnityServiceClient.Execute(IRequest request)
+   at Hyland.Unity.Services.HylandServices.CoreServiceAccess.Hyland.Unity.Services.ICoreServiceAccess.StoreDocument(IEnumerable`1 pageDataList, StoreNewDocumentProperties props)
+   at Hyland.Unity.Storage.StoreNewDocument(IEnumerable`1 pageDatas, StoreNewDocumentProperties props)
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.CreateDocument(Document document, String cpsProcessingDirectory, Guid correlationGuid, String filename, String documentTypeName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 188
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 361
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 09:36:35,153 [13] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 09:36:42,665 [13] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 09:53:52,478 [9] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 09:53:53,159 [9] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 09:53:53,162 [9] INFO  Program [(null)] - Starting ImportProcessorController.COBRNL, Correlation Guid: b0abd00c-8a1e-4a90-8fe3-bbe47543c222
+2024-10-08 09:54:14,259 [9] INFO  Program [(null)] - Document Type Name: CustomerWVDoc
+2024-10-08 09:54:38,393 [9] ERROR Program [(null)] - Attachment file not found: C:\COBRNL\Processing\CobRnl\dummy.pdf
+2024-10-08 09:54:38,451 [9] ERROR Program [(null)] - An unexpected error occurred. Attachment file not found: C:\COBRNL\Processing\CobRnl\dummy.pdf
+2024-10-08 09:54:38,502 [9] ERROR Program [(null)] - Unsuccessful Import for Guid: b0abd00c-8a1e-4a90-8fe3-bbe47543c222.
+System.IO.FileNotFoundException: Attachment file not found: C:\COBRNL\Processing\CobRnl\dummy.pdf
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.CreateDocument(Document document, String cpsProcessingDirectory, Guid correlationGuid, String filename, String documentTypeName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 108
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 361
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.COBRNL() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\COBRNLController.cs:line 21
+2024-10-08 09:54:38,560 [9] INFO  Program [(null)] - Finished ImportProcessorController.COBRNL
+2024-10-08 09:54:38,626 [9] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 10:02:43,926 [10] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 10:02:44,600 [10] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 10:02:44,602 [10] INFO  Program [(null)] - Starting ImportProcessorController.EOB, Correlation Guid: 48ee81d4-3783-48b3-9d47-9993332ba98a
+2024-10-08 10:03:04,225 [10] INFO  Program [(null)] - Document Type Name: CustomerWVDoc
+2024-10-08 10:12:39,006 [9] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 10:12:39,700 [9] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 10:12:39,703 [9] INFO  Program [(null)] - Starting ImportProcessorController.CPS, Correlation Guid: 6213805d-ee70-47e6-a8ac-3cefd38245fd
+2024-10-08 10:12:55,095 [9] INFO  Program [(null)] - Document Type Name: CustomerWVDoc
+2024-10-08 10:13:32,376 [9] ERROR Program [(null)] - An unexpected error occurred. An error occurred within the Unity API: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed
+2024-10-08 10:13:32,418 [9] ERROR Program [(null)] - Unsuccessful Import for Guid: 6213805d-ee70-47e6-a8ac-3cefd38245fd.
+Hyland.Unity.UnityAPIException: An error occurred within the Unity API: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed
+ ---> Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed ---> Source: Has been filtered
+TargetSite: Has been filtered
+Exception: Error connecting to File IO module (OBCorePlatMgmt.dll): InstallID not passed ---> The stacktrace has been removed. Please contact your administrator and provide error id: 065117e7-150c-4ffc-b706-ed5d92d7f04f to get more information.
+   End of Service Exception from Server.
+The stacktrace has been removed. Please contact your administrator and provide error id: 065117e7-150c-4ffc-b706-ed5d92d7f04f to get more information.
+   --- End of inner exception stack trace ---
+   at Hyland.Unity.UnityServiceClient.Execute(IRequest request)
+   at Hyland.Unity.Services.HylandServices.CoreServiceAccess.Hyland.Unity.Services.ICoreServiceAccess.StoreDocument(IEnumerable`1 pageDataList, StoreNewDocumentProperties props)
+   at Hyland.Unity.Storage.StoreNewDocument(IEnumerable`1 pageDatas, StoreNewDocumentProperties props)
+   at WC.Services.ImportProcessor.Dotnet8.Adapters.v1.DocumentAdapter.CreateDocument(Document document, String cpsProcessingDirectory, Guid correlationGuid, String filename, String documentTypeName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Adapters\v1\DocumentAdapter.cs:line 188
+   at WC.Services.ImportProcessor.Dotnet8.Managers.v1.ImportProcessorManager.CreateOnBaseObjects(String documentTypeIndicator, Guid correlationGuid) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Managers\v1\ImportProcessorManager.cs:line 361
+   at WC.Services.ImportProcessor.Dotnet8.Controllers.v1.ImportProcessorController.CPS() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\ImportProcessor.Dotnet8\src\ImportProcessor.Dotnet8\Controllers\v1\ClaimsPerformanceSolutionController.cs:line 24
+2024-10-08 10:13:32,472 [9] INFO  Program [(null)] - Finished ImportProcessorController.CPS
+2024-10-08 10:13:32,536 [9] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.
+2024-10-08 10:16:35,813 [23] INFO  Program [(null)] - Connecting to OnBase Application Server , Url 'http://ob-srv-0/appserver64/service.asmx', and DataSource 'onbasedb'.
+2024-10-08 10:16:36,078 [23] INFO  Program [(null)] - Successfully connected to OnBase Application Server through Hyland Unity API.
+2024-10-08 10:16:36,081 [23] INFO  Program [(null)] - Starting ImportProcessorController.EOB, Correlation Guid: 31041a7b-2c37-4b60-afa4-195f78d7f18b
+2024-10-08 10:16:36,082 [23] INFO  Program [(null)] - Total CreateDocumentObject Time: 0
+2024-10-08 10:16:36,082 [23] INFO  Program [(null)] - Successful Import for Guid: 31041a7b-2c37-4b60-afa4-195f78d7f18b.
+2024-10-08 10:16:36,082 [23] INFO  Program [(null)] - Finished: EOB Import.
+2024-10-08 10:16:36,083 [23] INFO  Program [(null)] - Finished ImportProcessorController.EOB
+2024-10-08 10:16:36,162 [23] INFO  Program [(null)] - Disconnect from OnBase Application Server through Hyland Unity API.

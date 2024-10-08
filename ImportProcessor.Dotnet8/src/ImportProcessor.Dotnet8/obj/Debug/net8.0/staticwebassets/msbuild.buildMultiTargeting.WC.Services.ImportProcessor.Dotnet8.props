@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WC.Services.ImportProcessor.Dotnet8.props" />
+</Project>
