@@ -1,0 +1,56 @@
+{
+  "documents": [
+	{
+	  "document": 
+		{
+  			"fileName": "dummy.pdf",
+			"documentTypeNumber": "1248",
+  			"keywords": [
+					{
+						"name": "Customer Name",
+						"value": "CustName"	
+					},
+					{
+						"name": "Address",
+						"value": "CustAddress"	
+					},
+					{
+						"name": "Phone Number",
+						"value": "12345"	
+					},
+					{
+						"name": "CompanyName",
+						"value": "Test Company Name"	
+					},
+					{
+						"name": "Date",
+						"value": "2023/12/11"	
+					},
+					{
+						"name": "RNL Letter Number",
+						"value": "12345678"	
+					},
+					{
+						"name": "Provider ID",
+						"value": "123"	
+					}
+			],
+  			"claims": [
+			{
+				"attributes":[
+					{
+						"name": "RNL Letter Number",
+						"value": "12345678"	
+					},
+					{
+						"name": "Provider ID",
+						"value": "123"	
+					}
+				]
+			}
+			]
+		}
+		
+	}
+   ]
+}

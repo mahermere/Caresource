@@ -1,0 +1,64 @@
+{
+  "documents": [
+	{
+	  "document": 
+		{
+  			"fileName": "dummy.pdf",
+			"documentTypeNumber": "1249",
+  			"keywords": [
+					{
+						"name": "Customer Name",
+						"value": "CustName"	
+					},
+					{
+						"name": "Address",
+						"value": "CustAddress"	
+					},
+					{
+						"name": "Phone Number",
+						"value": "12345"	
+					},
+					{
+						"name": "CompanyName",
+						"value": "Test Company Name"	
+					},
+					{
+						"name": "Date",
+						"value": "2023/12/11"	
+					},
+					{
+						"name": "CBRL Letter Number",
+						"value": "12345678"	
+					},
+					{
+						"name": "Provider ID",
+						"value": "123"	
+					},
+					{
+						"name": "Date Letter Mailed",
+						"value": "value changed"
+					},
+					{
+						"name": "GUID",
+						"value": "A92DFC28-A153-4373-B786-BBFF59AF03E2"
+					}
+			],
+  			"claims": [
+			{
+				"attributes":[
+					{
+						"name": "CBRL Letter Number",
+						"value": "12345678"	
+					},
+					{
+						"name": "Provider ID",
+						"value": "123"	
+					}
+				]
+			}
+			]
+		}
+		
+	}
+   ]
+}
