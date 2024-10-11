@@ -1,4 +1,4 @@
-﻿// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
 // <copyright>
 //   Copyright (c) CareSource, 2022. All rights reserved.
 // 
@@ -264,34 +264,76 @@ namespace WC.Services.ImportProcessor.Dotnet8.Managers.v1
 									errorMessage);
 							}
 
-							keywordUpdates.AddRange(
-								from dh in searchResponse
-								let guid = dh.DisplayColumns.FirstOrDefault(dc => dc.Key.Equals(GUID))
-									.Value.ToString()
-								select new KeywordUpdate
+							//keywordUpdates.AddRange(
+							//	from dh in searchResponse
+							//	let guid = dh.DisplayColumns.FirstOrDefault(dc => dc.Key.Equals(GUID))
+							//		.Value.ToString()
+							//	select new KeywordUpdate
+							//	{
+							//		Keywords = new Dictionary<string, string>
+							//		{
+							//			{
+							//				"Date Letter Mailed", cpsImportData.documents.FirstOrDefault(
+							//						id => id.document.keywords
+							//								.FirstOrDefault(dc => dc.Name.Equals(GUID))
+							//								?.Value ==
+							//							guid)
+							//					?.document.keywords.FirstOrDefault(
+							//						dc => dc.Name.Equals("Date Letter Mailed"))
+							//					?.Value
+							//			}
+							//		},
+							//		DocumentId = dh.DocumentId
+							//	});
+							long docId = 0;
+							string kwNameDateLetterMailed = "Date Letter Mailed";
+                            				string kwVal_dtLetterMailed = null;
+                            				Dictionary<string, string> kwDictionary = new();
+                            				foreach (DocumentHeader searchDoc in searchResponse)
+							{
+								bool guidMatch = false;
+								
+								docId = searchDoc.DocumentId;
+								string guid = searchDoc.DisplayColumns.FirstOrDefault(dc => dc.Key.Equals(GUID)).Value.ToString() ?? throw new Exception("Invalid GUID");
+								foreach (Document doc in cpsImportData.documents)
 								{
-									Keywords = new Dictionary<string, string>
+									foreach (Keyword kw in doc.document.keywords)
 									{
-										{
-											"Date Letter Mailed", cpsImportData.documents.FirstOrDefault(
-													id => id.document.keywords
-															.FirstOrDefault(dc => dc.Name.Equals(GUID))
-															?.Value ==
-														guid)
-												?.document.keywords.FirstOrDefault(
-													dc => dc.Name.Equals("Date Letter Mailed"))
-												?.Value
+										if (kw.Value.ToLower().Equals(guid.ToLower()))
+										{ 
+											guidMatch = true;
+											break;
 										}
-									},
-									DocumentId = dh.DocumentId
-								});
+									}
+									if (guidMatch)
+									{
+										foreach (Keyword kw1 in doc.document.keywords)
+										{
+											if (kw1.Name.Equals(kwNameDateLetterMailed))
+											{ 
+												kwVal_dtLetterMailed = kw1.Value;
+												break;
+											}
+										}
+									}
+                                   // kwDictionary.TryAdd("DocumentId", docId.ToString());
+                                    kwDictionary.TryAdd(kwNameDateLetterMailed, kwVal_dtLetterMailed);
+                                }
+							}
+						
+
+							KeywordUpdate kwToUpdate = new KeywordUpdate() { 
+								Keywords = kwDictionary,
+                                DocumentId = docId,
+                            };
+							keywordUpdates.Add(kwToUpdate);
 
 							_docadapter.ValidateDocumentIds(
 								searchResponse.Select(
 									sr => sr.DocumentId));
 
 							failures = _docadapter.UpdateKeywords(
-								keywordUpdates);
+                                keywordUpdates);
 
 							totalFailures.AddRange(failures);
 							searchResponse.Clear();
