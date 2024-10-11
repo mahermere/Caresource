@@ -1,0 +1,36 @@
+{
+  "documents": [
+	{
+	  "document": 
+		{
+  			"fileName": "dummy.pdf",
+			"documentTypeNumber": "1249",
+  			"keywords": [
+					{
+						"name": "Date Letter Mailed",
+						"value": "2023-10-10"
+					},
+					{
+						"name": "GUID",
+						"value": "A92DFC28-A153-4373-B786-BBFF59AF03E2"
+					}
+			],
+  			"claims": [
+			{
+				"attributes":[
+					{
+						"name": "CBRL Letter Number",
+						"value": "12345678"	
+					},
+					{
+						"name": "Provider ID",
+						"value": "123"	
+					}
+				]
+			}
+			]
+		}
+		
+	}
+   ]
+}
