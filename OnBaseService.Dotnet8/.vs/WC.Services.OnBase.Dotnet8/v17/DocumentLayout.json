@@ -1,0 +1,249 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\v1\\documenttypescontroller.types.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\v1\\documenttypescontroller.types.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\v1\\workviewcontroller.applications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\v1\\workviewcontroller.applications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\v1\\keywordcontroller.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\v1\\keywordcontroller.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\v1\\keywordcontroller.keywords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\v1\\keywordcontroller.keywords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\v1\\documenttypescontroller.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\v1\\documenttypescontroller.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\adapters\\v1\\documentadapter.types.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\adapters\\v1\\documentadapter.types.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\v1\\keywordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\v1\\keywordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\onbasecontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\onbasecontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\controllers\\v1\\workviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\controllers\\v1\\workviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\adapters\\v1\\documentadapter.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\adapters\\v1\\documentadapter.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\models\\base\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\models\\base\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\models\\v1\\documenttypegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\models\\v1\\documenttypegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\managers\\v1\\documentmanager.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\managers\\v1\\documentmanager.typegroups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\onbaseservice.dotnet8\\src\\wc.services.onbase.dotnet8\\models\\v1\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D570D5C-4321-4663-BB9F-32D56831F313}|src\\WC.Services.OnBase.Dotnet8\\WC.Services.OnBase.Dotnet8.csproj|solutionrelative:src\\wc.services.onbase.dotnet8\\models\\v1\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DocumentTypesController.Types.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.Types.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.Types.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.Types.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.Types.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAAGQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:39:04.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KeywordController.Keywords.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.Keywords.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.Keywords.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.Keywords.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.Keywords.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAD8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:51:18.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KeywordController.TypeGroups.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.TypeGroups.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.TypeGroups.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.TypeGroups.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.TypeGroups.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAC0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:56:45.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorkViewController.Applications.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.Applications.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.Applications.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.Applications.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.Applications.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAwHQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:57:53.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DocumentTypesController.TypeGroups.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.TypeGroups.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.TypeGroups.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.TypeGroups.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\DocumentTypesController.TypeGroups.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T04:48:41.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KeywordController.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\KeywordController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAuwCEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:51:45.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DocumentAdapter.Types.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.Types.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.Types.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.Types.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.Types.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAwwFAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:05:34.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OnBaseControllerBase.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\OnBaseControllerBase.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\OnBaseControllerBase.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\OnBaseControllerBase.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\OnBaseControllerBase.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA3wB0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:17:47.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WorkViewController.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Controllers\\v1\\WorkViewController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAuwCIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:52:20.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DocumentAdapter.TypeGroups.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.TypeGroups.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.TypeGroups.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.TypeGroups.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Adapters\\v1\\DocumentAdapter.TypeGroups.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAgwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:35:47.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DocumentTypeGroup.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentTypeGroup.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentTypeGroup.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentTypeGroup.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentTypeGroup.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwBAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:31:05.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Models\\Base\\BaseModel.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Models\\Base\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Models\\Base\\BaseModel.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Models\\Base\\BaseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:29:13.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DocumentType.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentType.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentType.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentType.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Models\\v1\\DocumentType.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwBIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:30:33.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DocumentManager.TypeGroups.cs",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Managers\\v1\\DocumentManager.TypeGroups.cs",
+              "RelativeDocumentMoniker": "src\\WC.Services.OnBase.Dotnet8\\Managers\\v1\\DocumentManager.TypeGroups.cs",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\OnBaseService.Dotnet8\\src\\WC.Services.OnBase.Dotnet8\\Managers\\v1\\DocumentManager.TypeGroups.cs",
+              "RelativeToolTip": "src\\WC.Services.OnBase.Dotnet8\\Managers\\v1\\DocumentManager.TypeGroups.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvxIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T06:35:38.323Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+2024-10-15 06:18:09,231 [7] INFO  Program [(null)] - Successfully retrieved Document Types
+2024-10-15 06:19:32,877 [10] INFO  Program [(null)] - Successfully retrieved Document Types
+2024-10-15 06:23:11,434 [10] INFO  Program [(null)] - Successfully retrieved Document Types
+2024-10-15 06:38:25,836 [13] INFO  Program [(null)] - Successfully retrieved Document Types
+2024-10-15 06:40:51,189 [20] INFO  Program [(null)] - Successfully retrieved Document Types
+2024-10-15 06:42:39,663 [23] ERROR Program [(null)] - The header contains invalid values at index 0: 'WC.Services.OnBase.Dotnet8.Models.BaseResponse`1[System.String]'
+System.FormatException: The header contains invalid values at index 0: 'WC.Services.OnBase.Dotnet8.Models.BaseResponse`1[System.String]'
+   at Microsoft.Net.Http.Headers.HttpHeaderParser`1.ParseValue(StringSegment value, Int32& index)
+   at Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse(StringSegment input)
+   at Microsoft.AspNetCore.Mvc.ControllerBase.Content(String content, String contentType)
+   at WC.Services.OnBase.Dotnet8.Controllers.v1.DocumentTypesController.SearchByKeyword(String keywordName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\OnBaseService.Dotnet8\src\WC.Services.OnBase.Dotnet8\Controllers\v1\DocumentTypesController.Types.cs:line 115
+2024-10-15 06:48:38,002 [9] ERROR Program [(null)] - The header contains invalid values at index 0: 'WC.Services.OnBase.Dotnet8.Models.BaseResponse`1[System.String]'
+System.FormatException: The header contains invalid values at index 0: 'WC.Services.OnBase.Dotnet8.Models.BaseResponse`1[System.String]'
+   at Microsoft.Net.Http.Headers.HttpHeaderParser`1.ParseValue(StringSegment value, Int32& index)
+   at Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse(StringSegment input)
+   at Microsoft.AspNetCore.Mvc.ControllerBase.Content(String content, String contentType)
+   at WC.Services.OnBase.Dotnet8.Controllers.v1.DocumentTypesController.SearchByKeyword(String keywordName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\OnBaseService.Dotnet8\src\WC.Services.OnBase.Dotnet8\Controllers\v1\DocumentTypesController.Types.cs:line 115
+2024-10-15 06:51:39,990 [3] ERROR Program [(null)] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WC.Services.OnBase.Dotnet8.Controllers.v1.KeywordsController.Keywords() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\OnBaseService.Dotnet8\src\WC.Services.OnBase.Dotnet8\Controllers\v1\KeywordController.Keywords.cs:line 31
+2024-10-15 06:53:16,802 [7] INFO  Program [(null)] - Successfully loaded Keywords
+2024-10-15 06:56:10,074 [13] INFO  Program [(null)] - Successfully loaded Keywords
+2024-10-15 06:57:33,481 [22] INFO  Program [(null)] - Successfully loaded Keyword Type Groups
+2024-10-15 06:58:18,298 [9] INFO  Program [(null)] - Successfully retrieved Applications
+2024-10-15 06:59:47,508 [16] INFO  Program [(null)] - Successfully retrieved Applications
+2024-10-15 07:01:19,969 [27] INFO  Program [(null)] - Successfully retrieved Applications
+2024-10-15 07:04:28,060 [10] ERROR Program [(null)] - The header contains invalid values at index 0: 'WC.Services.OnBase.Dotnet8.Models.BaseResponse`1[System.String]'
+System.FormatException: The header contains invalid values at index 0: 'WC.Services.OnBase.Dotnet8.Models.BaseResponse`1[System.String]'
+   at Microsoft.Net.Http.Headers.HttpHeaderParser`1.ParseValue(StringSegment value, Int32& index)
+   at Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse(StringSegment input)
+   at Microsoft.AspNetCore.Mvc.ControllerBase.Content(String content, String contentType)
+   at WC.Services.OnBase.Dotnet8.Controllers.v1.DocumentTypesController.SearchByKeyword(String keywordName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\OnBaseService.Dotnet8\src\WC.Services.OnBase.Dotnet8\Controllers\v1\DocumentTypesController.Types.cs:line 115
+2024-10-15 08:14:23,256 [5] INFO  Program [(null)] - Successfully loaded Keywords
+2024-10-15 08:15:03,453 [5] INFO  Program [(null)] - Successfully retrieved Document Types
+2024-10-15 08:33:59,788 [13] INFO  Program [(null)] - Successfully retrieved Document Types
+2024-10-15 08:34:20,247 [10] ERROR Program [(null)] - Bad Request
+System.FormatException: The header contains invalid values at index 0: 'WC.Services.OnBase.Dotnet8.Models.BaseResponse`1[System.String]'
+   at Microsoft.Net.Http.Headers.HttpHeaderParser`1.ParseValue(StringSegment value, Int32& index)
+   at Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse(StringSegment input)
+   at Microsoft.AspNetCore.Mvc.ControllerBase.Content(String content, String contentType)
+   at WC.Services.OnBase.Dotnet8.Controllers.v1.DocumentTypesController.SearchByKeyword(String keywordName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\OnBaseService.Dotnet8\src\WC.Services.OnBase.Dotnet8\Controllers\v1\DocumentTypesController.Types.cs:line 117
+2024-10-15 08:47:27,845 [10] INFO  Program [(null)] - Successfully retrieved Document Types
