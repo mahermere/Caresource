@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "cef2b4d2-9f2b-4525-8350-9fabe2aef5b3",
+		"name": "W&C Services WorkView Dotnet8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37782135",
+		"_collection_link": "https://speeding-resonance-336720.postman.co/workspace/Caresource~0a952028-6cc7-44d8-bf07-7aa2d4c48e53/collection/37756819-cef2b4d2-9f2b-4525-8350-9fabe2aef5b3?action=share&source=collection_link&creator=37782135"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{OnBasePassword}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{OnBaseUserName}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "secret-key",
+								"value": "{{secretkey}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"currentUser\": \"manager\",\r\n  \"sourceApplication\": \"WV-Customer\",\r\n  \"data\": [\r\n    {\r\n      \"className\": \"Customer\",\r\n      \"properties\": {\r\n        \"CompanyName\": \"ITSolution\",\r\n        \"CustomerName\": \"K3\",\r\n        \"Address\": \"ABC\"\r\n      }\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostnameWorkViewServices}}/api/Create/Post/{{workViewApplicationName}}",
+							"host": [
+								"{{hostnameWorkViewServices}}"
+							],
+							"path": [
+								"api",
+								"Create",
+								"Post",
+								"{{workViewApplicationName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetDataSet",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{OnBasePassword}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{OnBaseUserName}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "secret-key",
+								"value": "{{secretkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostnameWorkViewServices}}/api/DataSet/GetDataSet/{{workViewApplicationName}}/{{className}}/{{dataSetName}}",
+							"host": [
+								"{{hostnameWorkViewServices}}"
+							],
+							"path": [
+								"api",
+								"DataSet",
+								"GetDataSet",
+								"{{workViewApplicationName}}",
+								"{{className}}",
+								"{{dataSetName}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{OnBasePassword}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{OnBaseUserName}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "secret-key",
+								"value": "{{secretkey}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostnameWorkViewServices}}/api/Retrieve/GetById/{{workViewApplicationName}}/{{className}}/{{objectId}}",
+							"host": [
+								"{{hostnameWorkViewServices}}"
+							],
+							"path": [
+								"api",
+								"Retrieve",
+								"GetById",
+								"{{workViewApplicationName}}",
+								"{{className}}",
+								"{{objectId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{OnBasePassword}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{OnBaseUserName}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "secret-key",
+								"value": "{{secretkey}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"correlationGuid\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"currentUser\": \"manager\",\r\n  \"requestDateTime\": \"2024-10-17T09:57:27.154Z\",\r\n  \"sourceApplication\": \"WV-Customer\",\r\n  \"className\": \"Customer\",\r\n  \"filters\": [\r\n    {\r\n      \"name\": \"CompanyName\",\r\n      \"value\": \"ITSolution\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{hostnameWorkViewServices}}/api/Search/Search/{{workViewApplicationName}}",
+							"host": [
+								"{{hostnameWorkViewServices}}"
+							],
+							"path": [
+								"api",
+								"Search",
+								"Search",
+								"{{workViewApplicationName}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

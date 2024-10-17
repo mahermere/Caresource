@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZNm9qLb5yBQHH1QFClgzp1Mr359NzmCybYbnumVksSQ=",
+  "Source": "WC.Services.WorkView.Dotnet8",
+  "BasePath": "_content/WC.Services.WorkView.Dotnet8",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WC.Services.WorkView.Dotnet8.props" />
+</Project>

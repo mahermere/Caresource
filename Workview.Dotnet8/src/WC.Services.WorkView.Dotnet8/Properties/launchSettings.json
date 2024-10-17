@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "WC.Services.WorkView.Dotnet8": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "dotnetRunMessages": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:57551;http://localhost:57552",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

@@ -1,0 +1,205 @@
+2024-10-17 04:12:09,865 [3] INFO  Program [(null)] - Starting DataSetController.GetDataSet. WorkView Application: WV-Customer, Class Name: Customer, Dataset: MyDataSet
+2024-10-17 04:12:09,878 [3] INFO  Program [(null)] - Starting GetDataSetValues for WV-Customer.Customer.MyDataSet
+2024-10-17 04:12:10,236 [3] ERROR Program [(null)] - Unsuccessful Import for Guid: 23cbb229-b4ec-46e1-afaa-584e572a8937.
+System.ArgumentException: Keyword not supported: 'providername'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.DataSetAdapter.ExecuteSql(String sql) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\DataSetAdapter.cs:line 163
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.DataSetAdapter.GetDataSet(String workViewApplicationName, String className, String dataSetName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\DataSetAdapter.cs:line 149
+   at WC.Services.WorkView.Dotnet8.Managers.v5.DataSetManager.GetDataSetValues(String workViewApplicationName, String className, String dataSetName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Managers\v5\DataSetManager.cs:line 38
+   at WC.Services.WorkView.Dotnet8.Controllers.DataSetController.GetDataSet(String workViewApplicationName, String className, String dataSetName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Controllers\DataSetController.cs:line 36
+2024-10-17 04:12:10,368 [3] INFO  Program [(null)] - Finished DataSetController.GetDataSet
+2024-10-17 04:13:19,983 [19] INFO  Program [(null)] - Starting DataSetController.GetDataSet. WorkView Application: WV-Customer, Class Name: Customer, Dataset: MyDataSet
+2024-10-17 04:13:34,243 [19] INFO  Program [(null)] - Starting GetDataSetValues for WV-Customer.Customer.MyDataSet
+2024-10-17 04:15:35,549 [19] ERROR Program [(null)] - Unsuccessful Import for Guid: 4c9b520c-158e-4757-9af5-639a98203a1a.
+System.ArgumentException: Keyword not supported: 'providername'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.DataSetAdapter.ExecuteSql(String sql) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\DataSetAdapter.cs:line 163
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.DataSetAdapter.GetDataSet(String workViewApplicationName, String className, String dataSetName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\DataSetAdapter.cs:line 149
+   at WC.Services.WorkView.Dotnet8.Managers.v5.DataSetManager.GetDataSetValues(String workViewApplicationName, String className, String dataSetName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Managers\v5\DataSetManager.cs:line 38
+   at WC.Services.WorkView.Dotnet8.Controllers.DataSetController.GetDataSet(String workViewApplicationName, String className, String dataSetName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Controllers\DataSetController.cs:line 36
+2024-10-17 04:15:35,559 [19] INFO  Program [(null)] - Finished DataSetController.GetDataSet
+2024-10-17 04:19:00,703 [13] INFO  Program [(null)] - Starting DataSetController.GetDataSet. WorkView Application: WV-Customer, Class Name: Customer, Dataset: MyDataSet
+2024-10-17 04:19:00,716 [13] INFO  Program [(null)] - Starting GetDataSetValues for WV-Customer.Customer.MyDataSet
+2024-10-17 04:19:30,251 [13] INFO  Program [(null)] - Response for DataSetController.GetDataSet. Response: System.Collections.Generic.List`1[System.String]
+2024-10-17 04:19:32,218 [13] INFO  Program [(null)] - Finished DataSetController.GetDataSet
+2024-10-17 06:48:47,525 [24] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: 2314ddaa-a12d-4a78-9116-f28b52ca6842
+2024-10-17 06:48:47,539 [24] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 1
+2024-10-17 06:48:47,539 [24] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1.
+2024-10-17 06:48:47,541 [24] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1.
+2024-10-17 06:48:47,713 [24] ERROR Program [(null)] - Error occurred: No item found for the provided Id. Application: WV-Customer, Class: Customer, Object ID: 1
+System.Collections.Generic.KeyNotFoundException: No item found for the provided Id
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.RetrieveAdapter.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\RetrieveAdapter.cs:line 77
+   at WC.Services.WorkView.Dotnet8.Managers.v5.RetrieveManager.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Managers\v5\RetrieveManager.cs:line 45
+   at WC.Services.WorkView.Dotnet8.Controllers.RetrieveController.GetById(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Controllers\RetrieveController.cs:line 39
+2024-10-17 06:49:09,720 [24] INFO  Program [(null)] - Finished RetrieveController.GetById
+2024-10-17 06:54:38,570 [3] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: 6d48d50f-77cb-4ad4-a732-b2ef7d237f4a
+2024-10-17 06:54:38,583 [3] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 1
+2024-10-17 06:54:38,584 [3] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1.
+2024-10-17 06:54:38,585 [3] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1.
+2024-10-17 06:54:38,693 [3] ERROR Program [(null)] - Error occurred: No item found for the provided Id. Application: WV-Customer, Class: Customer, Object ID: 1
+System.Collections.Generic.KeyNotFoundException: No item found for the provided Id
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.RetrieveAdapter.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\RetrieveAdapter.cs:line 77
+   at WC.Services.WorkView.Dotnet8.Managers.v5.RetrieveManager.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Managers\v5\RetrieveManager.cs:line 45
+   at WC.Services.WorkView.Dotnet8.Controllers.RetrieveController.GetById(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Controllers\RetrieveController.cs:line 39
+2024-10-17 06:54:55,095 [3] INFO  Program [(null)] - Finished RetrieveController.GetById
+2024-10-17 06:56:34,802 [25] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: bd101c55-179a-4790-b197-040b8110fc56
+2024-10-17 06:56:34,802 [25] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 0
+2024-10-17 06:56:34,803 [25] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 0.
+2024-10-17 06:56:34,803 [25] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 0.
+2024-10-17 06:56:34,884 [25] ERROR Program [(null)] - Error occurred: No item found for the provided Id. Application: WV-Customer, Class: Customer, Object ID: 0
+System.Collections.Generic.KeyNotFoundException: No item found for the provided Id
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.RetrieveAdapter.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\RetrieveAdapter.cs:line 77
+   at WC.Services.WorkView.Dotnet8.Managers.v5.RetrieveManager.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Managers\v5\RetrieveManager.cs:line 45
+   at WC.Services.WorkView.Dotnet8.Controllers.RetrieveController.GetById(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Controllers\RetrieveController.cs:line 39
+2024-10-17 06:56:37,409 [25] INFO  Program [(null)] - Finished RetrieveController.GetById
+2024-10-17 06:59:21,011 [9] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: a2e3ecad-a679-4d2b-9644-ad29ae2ffaa1
+2024-10-17 06:59:21,024 [9] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 0
+2024-10-17 06:59:21,024 [9] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 0.
+2024-10-17 06:59:21,026 [9] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 0.
+2024-10-17 06:59:21,159 [9] ERROR Program [(null)] - Error occurred: No item found for the provided Id. Application: WV-Customer, Class: Customer, Object ID: 0
+System.Collections.Generic.KeyNotFoundException: No item found for the provided Id
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.RetrieveAdapter.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\RetrieveAdapter.cs:line 77
+   at WC.Services.WorkView.Dotnet8.Managers.v5.RetrieveManager.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Managers\v5\RetrieveManager.cs:line 45
+   at WC.Services.WorkView.Dotnet8.Controllers.RetrieveController.GetById(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Controllers\RetrieveController.cs:line 39
+2024-10-17 06:59:25,257 [9] INFO  Program [(null)] - Finished RetrieveController.GetById
+2024-10-17 08:49:57,088 [13] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: 8739872e-5f28-4cb4-ab6b-b0b372ac3220
+2024-10-17 08:49:57,101 [13] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 1013
+2024-10-17 08:49:57,102 [13] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1013.
+2024-10-17 08:49:57,103 [13] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1013.
+2024-10-17 08:49:57,213 [13] INFO  Program [(null)] - Finished RetrieveController.GetById
+2024-10-17 08:50:57,796 [17] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: fb09fb82-bcff-4080-a3d7-60b52f3fa799
+2024-10-17 08:50:57,796 [17] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 1014
+2024-10-17 08:50:57,797 [17] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1014.
+2024-10-17 08:50:57,798 [17] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1014.
+2024-10-17 08:50:57,978 [17] ERROR Program [(null)] - Error occurred: No item found for the provided Id. Application: WV-Customer, Class: Customer, Object ID: 1014
+System.Collections.Generic.KeyNotFoundException: No item found for the provided Id
+   at WC.Services.WorkView.Dotnet8.Adapters.v5.RetrieveAdapter.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Adapters\v5\RetrieveAdapter.cs:line 77
+   at WC.Services.WorkView.Dotnet8.Managers.v5.RetrieveManager.GetWorkviewObject(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Managers\v5\RetrieveManager.cs:line 45
+   at WC.Services.WorkView.Dotnet8.Controllers.RetrieveController.GetById(String workViewApplicationName, String className, Int64 objectId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\Workview.Dotnet8\src\WC.Services.WorkView.Dotnet8\Controllers\RetrieveController.cs:line 39
+2024-10-17 08:55:25,855 [18] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 08:58:39,293 [18] ERROR Program [(null)] - Error Validating Model State.
+2024-10-17 08:58:48,446 [18] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:00:25,465 [3] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:00:29,845 [3] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:00:29,845 [3] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:06:41,575 [3] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:08:59,589 [3] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:09:17,363 [3] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915601
+2024-10-17 09:09:20,480 [3] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:16:34,097 [18] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:16:37,495 [18] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:16:38,616 [18] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915602
+2024-10-17 09:16:38,623 [18] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:19:21,575 [21] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:19:21,594 [21] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:19:21,676 [21] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915603
+2024-10-17 09:19:21,677 [21] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:19:25,979 [19] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:19:25,995 [19] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:19:26,070 [19] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915604
+2024-10-17 09:19:26,071 [19] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:22:15,512 [19] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:22:15,531 [19] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:22:15,645 [19] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915605
+2024-10-17 09:22:15,646 [19] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:22:51,820 [10] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:22:52,110 [10] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:24:36,588 [10] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915606
+2024-10-17 09:25:09,357 [10] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:29:30,126 [17] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:29:30,432 [17] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:33:07,039 [17] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915607
+2024-10-17 09:34:04,144 [17] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:34:57,697 [7] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:34:57,982 [7] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:35:20,040 [7] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915608
+2024-10-17 09:39:16,167 [9] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:39:16,463 [9] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:39:38,423 [9] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915609
+2024-10-17 09:39:41,287 [9] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:42:27,165 [9] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:42:27,455 [9] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:42:32,279 [9] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915610
+2024-10-17 09:42:32,281 [9] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:46:35,637 [10] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:46:35,926 [10] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:46:41,926 [10] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915611
+2024-10-17 09:46:41,927 [10] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:49:46,522 [5] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:49:46,840 [5] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:49:53,904 [5] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915612
+2024-10-17 09:49:53,905 [5] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:56:12,099 [7] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 09:56:12,418 [7] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 09:56:25,187 [7] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915613
+2024-10-17 09:56:25,189 [7] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 09:56:52,319 [10] INFO  Program [(null)] - Starting DataSetController.GetDataSet. WorkView Application: WV-Customer, Class Name: Customer, Dataset: MyDataSet
+2024-10-17 09:56:52,321 [10] INFO  Program [(null)] - Starting GetDataSetValues for WV-Customer.Customer.MyDataSet
+2024-10-17 09:56:52,339 [10] INFO  Program [(null)] - Response for DataSetController.GetDataSet. Response: System.Collections.Generic.List`1[System.String]
+2024-10-17 09:56:52,339 [10] INFO  Program [(null)] - Finished DataSetController.GetDataSet
+2024-10-17 09:56:57,605 [10] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: f911d24d-7905-487e-befc-a8726b72c5c4
+2024-10-17 09:56:57,605 [10] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 1013
+2024-10-17 09:56:57,607 [10] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1013.
+2024-10-17 09:56:57,607 [10] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 1013.
+2024-10-17 09:56:57,644 [10] INFO  Program [(null)] - Finished RetrieveController.GetById
+2024-10-17 10:10:41,657 [21] INFO  Program [(null)] - Starting RetrieveController.GetById. Correlation Guid: 663affbb-1650-4287-a80d-6cbfc6e4bb62
+2024-10-17 10:10:41,658 [21] INFO  Program [(null)] - Successfully retrieved Application/Class: WV-Customer/Customer and Object ID: 915602
+2024-10-17 10:10:41,658 [21] INFO  Program [(null)] - RetrieveManager.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 915602.
+2024-10-17 10:10:41,659 [21] INFO  Program [(null)] - RetrieveAdapter.GetWorkviewObject call, to getWV-Customer.Customer Object Id: 915602.
+2024-10-17 10:10:41,724 [21] INFO  Program [(null)] - Finished RetrieveController.GetById
+2024-10-17 10:17:55,333 [23] INFO  Program [(null)] - Begin Search WV-Customer. Data: WC.Services.WorkView.Dotnet8.Models.v5.SearchRequest
+2024-10-17 10:18:02,305 [23] INFO  Program [(null)] - SearchManager.Search call, to getWV-Customer.Customer.
+2024-10-17 10:18:06,513 [23] INFO  Program [(null)] - SearchAdapter.Search call, to getWV-Customer.Customer.
+2024-10-17 10:19:44,434 [23] INFO  Program [(null)] - Successfully retrieved results for Application: WV-Customer
+2024-10-17 10:19:49,961 [23] INFO  Program [(null)] - Finished Search WV-Customer
+2024-10-17 10:20:51,006 [21] INFO  Program [(null)] - Begin Search WV-Customer. Data: WC.Services.WorkView.Dotnet8.Models.v5.SearchRequest
+2024-10-17 10:20:51,024 [21] INFO  Program [(null)] - SearchManager.Search call, to getWV-Customer.Customer.
+2024-10-17 10:20:51,024 [21] INFO  Program [(null)] - SearchAdapter.Search call, to getWV-Customer.Customer.
+2024-10-17 10:20:51,065 [21] INFO  Program [(null)] - Successfully retrieved results for Application: WV-Customer
+2024-10-17 10:20:51,152 [21] INFO  Program [(null)] - Finished Search WV-Customer
+2024-10-17 10:27:59,735 [20] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2024-10-17 10:28:00,047 [20] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 10:28:00,167 [20] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915614
+2024-10-17 10:28:00,168 [20] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 10:28:22,231 [19] INFO  Program [(null)] - Starting DataSetController.GetDataSet. WorkView Application: WV-Customer, Class Name: Customer, Dataset: MyDataSet
+2024-10-17 10:28:22,232 [19] INFO  Program [(null)] - Starting GetDataSetValues for WV-Customer.Customer.MyDataSet
+2024-10-17 10:28:22,250 [19] INFO  Program [(null)] - Response for DataSetController.GetDataSet. Response: System.Collections.Generic.List`1[System.String]
+2024-10-17 10:28:22,253 [19] INFO  Program [(null)] - Finished DataSetController.GetDataSet
+2024-10-17 10:29:11,576 [19] INFO  Program [(null)] - Begin Search WV-Customer. Data: WC.Services.WorkView.Dotnet8.Models.v5.SearchRequest
+2024-10-17 10:29:11,596 [19] INFO  Program [(null)] - SearchManager.Search call, to getWV-Customer.Customer.
+2024-10-17 10:29:11,597 [19] INFO  Program [(null)] - SearchAdapter.Search call, to getWV-Customer.Customer.
+2024-10-17 10:29:11,628 [19] INFO  Program [(null)] - Successfully retrieved results for Application: WV-Customer
+2024-10-17 10:29:11,674 [19] INFO  Program [(null)] - Finished Search WV-Customer
+2024-10-17 10:40:50,117 [10] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: d2d7a3a3-8b06-440e-b70e-7664bb97176b
+2024-10-17 10:40:50,414 [10] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 10:40:50,528 [10] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915615
+2024-10-17 10:40:50,529 [10] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 10:41:56,967 [18] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: fc943e7a-bf9b-4ee4-a0fc-fc45bc6b18b2
+2024-10-17 10:41:56,984 [18] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 10:41:56,986 [18] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 10:42:18,184 [21] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 729e8753-3691-4d3c-957e-f1c07c9e0fd9
+2024-10-17 10:42:18,200 [21] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 10:42:18,269 [21] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915616
+2024-10-17 10:42:18,270 [21] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 10:48:08,875 [9] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 23d5b62c-1cd5-4152-908b-287dcfc5ff4c
+2024-10-17 10:48:09,184 [9] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 10:48:09,309 [9] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915617
+2024-10-17 10:48:09,309 [9] INFO  Program [(null)] - Finished CreateController.Post
+2024-10-17 10:51:01,256 [9] INFO  Program [(null)] - Starting CreateController.Post - Correlation Guid: 1223bc80-e20f-411c-bc8b-64e5d3770b25
+2024-10-17 10:51:01,567 [9] INFO  Program [(null)] - Model State is Valid.
+2024-10-17 10:51:01,686 [9] INFO  Program [(null)] - Successfully created Object for Class: Customer with Object ID: 915618
+2024-10-17 10:51:01,687 [9] INFO  Program [(null)] - Finished CreateController.Post

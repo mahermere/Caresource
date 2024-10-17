@@ -1,0 +1,6 @@
+@We.Services.WorkView.Dotnet8_HostAddress = http://localhost:5117
+
+GET {{We.Services.WorkView.Dotnet8_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
