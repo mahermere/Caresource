@@ -1,0 +1,316 @@
+2024-10-24 10:08:58,473 [11] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:08:58,514 [11] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:10:58,004 [12] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:10:58,031 [12] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:10:58,232 [12] ERROR Program [(null)] - Could not find the resource "CareSource.WC.Services.Document.StringResouces.resources" among the resources "" embedded in the assembly "WC.Services.Document.Dotnet8", nor among the resources in any satellite assemblies for the specified culture. Perhaps the resources were embedded with an incorrect name.
+System.Resources.MissingManifestResourceException: Could not find the resource "CareSource.WC.Services.Document.StringResouces.resources" among the resources "" embedded in the assembly "WC.Services.Document.Dotnet8", nor among the resources in any satellite assemblies for the specified culture. Perhaps the resources were embedded with an incorrect name.
+   at System.Resources.ManifestBasedResourceGroveler.HandleResourceStreamMissing(String fileName)
+   at System.Resources.ManifestBasedResourceGroveler.GrovelForResourceSet(CultureInfo culture, Dictionary`2 localResourceSets, Boolean tryParents, Boolean createIfNotExists)
+   at System.Resources.ResourceManager.InternalGetResourceSet(CultureInfo culture, Boolean createIfNotExists, Boolean tryParents)
+   at System.Resources.ResourceManager.GetString(String name, CultureInfo culture)
+   at WC.Services.Document.Dotnet8.StringResouces.get_Getting_Keyword_Type() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\StringResouces.Designer.cs:line 87
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseAdapter.GetKeywordByName(String keywordName) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseAdapter.cs:line 135
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.SetupInstanceVariables(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 754
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.DocumentTypesCount(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.Count.cs:line 56
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.DocumentTypeCounts(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\BaseDocumentManager.cs:line 73
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.DocumentTypesCount(CountRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.Count.cs:line 72
+2024-10-24 10:10:58,314 [12] INFO  Program [(null)] - Finished DocumentController.DocumentTypesCount
+2024-10-24 10:12:04,306 [17] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:12:04,307 [17] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:17:58,417 [10] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:17:58,442 [10] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:18:33,413 [5] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:18:33,448 [5] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:37:24,151 [7] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:37:24,179 [7] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:38:42,220 [7] ERROR Program [(null)] - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.LetterTypeValues(Boolean memberFacing, Boolean providerFacing) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 673
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.SetupInstanceVariables(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 756
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.DocumentTypesCount(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.Count.cs:line 56
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.DocumentTypeCounts(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\BaseDocumentManager.cs:line 73
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.DocumentTypesCount(CountRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.Count.cs:line 72
+2024-10-24 10:38:42,267 [7] INFO  Program [(null)] - Finished DocumentController.DocumentTypesCount
+2024-10-24 10:43:38,651 [27] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:43:38,652 [27] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:45:51,395 [11] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:45:51,426 [11] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:51:53,962 [11] ERROR Program [(null)] - Sequence contains no matching element
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.LetterTypeValues(Boolean memberFacing, Boolean providerFacing) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 697
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.SetupInstanceVariables(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 761
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.DocumentTypesCount(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.Count.cs:line 56
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.DocumentTypeCounts(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\BaseDocumentManager.cs:line 73
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.DocumentTypesCount(CountRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.Count.cs:line 72
+2024-10-24 10:51:54,004 [11] INFO  Program [(null)] - Finished DocumentController.DocumentTypesCount
+2024-10-24 10:53:16,917 [7] INFO  Program [(null)] - Request for DocumentController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-24 10:53:16,950 [7] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-24 10:55:00,293 [7] ERROR Program [(null)] - Sequence contains no matching element
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.LetterTypeValues(Boolean memberFacing, Boolean providerFacing) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 697
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.SetupInstanceVariables(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 761
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.DocumentTypesCount(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.Count.cs:line 56
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.DocumentTypeCounts(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\BaseDocumentManager.cs:line 73
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.DocumentTypesCount(CountRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.Count.cs:line 72
+2024-10-24 10:55:00,315 [7] INFO  Program [(null)] - Finished DocumentController.DocumentTypesCount
+2024-10-24 12:18:43,491 [14] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:18:46,637 [14] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:24:24,865 [3] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:24:27,800 [3] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:26:48,747 [10] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:37:12,110 [9] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:37:32,556 [9] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:37:39,140 [9] INFO  Program [(null)] - Finished DocumentController.Create
+2024-10-24 12:40:03,524 [18] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:40:41,879 [18] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:40:50,215 [18] INFO  Program [(null)] - Finished DocumentController.Create
+2024-10-24 12:44:52,427 [13] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:47:32,165 [13] INFO  Program [(null)] - html
+2024-10-24 12:47:38,203 [13] INFO  Program [(null)] - Finished DocumentController.Create
+2024-10-24 12:53:24,164 [7] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:53:32,693 [7] INFO  Program [(null)] - html
+2024-10-24 12:53:32,703 [7] INFO  Program [(null)] - Finished DocumentController.Create
+2024-10-24 12:58:07,828 [7] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:58:15,496 [7] INFO  Program [(null)] - html
+2024-10-24 12:58:15,506 [7] INFO  Program [(null)] - Finished DocumentController.Create
+2024-10-24 12:59:54,018 [7] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-24 12:59:54,460 [7] INFO  Program [(null)] - html
+2024-10-24 12:59:54,470 [7] INFO  Program [(null)] - Finished DocumentController.Create
+2024-10-24 13:08:05,357 [24] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-24 13:10:27,651 [13] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-24 13:11:54,756 [10] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-24 13:11:58,077 [10] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-24 13:11:58,229 [10] INFO  Program [(null)] - Saving document for 'Appointment Letter' document type name through Hyland Unity API.
+2024-10-24 13:12:06,575 [10] ERROR Program [(null)] - Unknown Exception : No document found for id:2500.. Model State: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Request: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+WC.Services.Document.Dotnet8.Models.v6.DocumentNotFoundException: No document found for id:2500.
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseGetDocumentAdapter.getHylanDocument(Int64 documentId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseGetDocumentAdapter.cs:line 60
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseGetDocumentAdapter.GetDocument(Int64 documentId, IDownloadRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseGetDocumentAdapter.cs:line 124
+   at WC.Services.Document.Dotnet8.Managers.v6.CreateDocumentManager.CreateDocument(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\CreateDocumentManager.cs:line 89
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Upload(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.FileLink.cs:line 174
+2024-10-24 13:12:09,733 [10] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-24 13:12:36,415 [10] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-24 13:14:13,854 [10] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-24 13:16:44,459 [10] INFO  Program [(null)] - Saving document for 'Appointment Letter' document type name through Hyland Unity API.
+2024-10-25 05:30:04,179 [20] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 05:30:24,527 [20] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 05:30:24,674 [20] INFO  Program [(null)] - Saving document for 'Appointment Letter' document type name through Hyland Unity API.
+2024-10-25 05:32:17,494 [20] ERROR Program [(null)] - Unknown Exception : No document found for id:2502.. Model State: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Request: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+WC.Services.Document.Dotnet8.Models.v6.DocumentNotFoundException: No document found for id:2502.
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseGetDocumentAdapter.getHylanDocument(Int64 documentId) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseGetDocumentAdapter.cs:line 60
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseGetDocumentAdapter.GetDocument(Int64 documentId, IDownloadRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseGetDocumentAdapter.cs:line 124
+   at WC.Services.Document.Dotnet8.Managers.v6.CreateDocumentManager.CreateDocument(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\CreateDocumentManager.cs:line 89
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Upload(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.FileLink.cs:line 174
+2024-10-25 05:32:17,564 [20] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 05:37:20,774 [10] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 05:37:20,907 [10] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 05:37:21,050 [10] INFO  Program [(null)] - Saving document for 'Appointment Letter' document type name through Hyland Unity API.
+2024-10-25 05:41:45,463 [13] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 05:41:45,580 [13] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 05:41:45,758 [13] INFO  Program [(null)] - Saving document for 'Appointment Letter' document type name through Hyland Unity API.
+2024-10-25 05:44:19,475 [9] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 05:44:19,598 [9] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 05:44:19,765 [9] INFO  Program [(null)] - Saving document for 'Appointment Letter' document type name through Hyland Unity API.
+2024-10-25 05:58:42,410 [9] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 05:58:42,517 [9] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 05:58:42,756 [9] ERROR Program [(null)] - Argument Exception : Unable to find keyword types 'Patent Name, Patent Age' in OnBase.. Model State: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Request: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+System.ArgumentException: Unable to find keyword types 'Patent Name, Patent Age' in OnBase.
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseCreateDocumentAdapter.AddKeywordRecordsToDocumentProperties(DocumentType documentType, IDictionary`2 keywords, AddOnlyKeywordModifier newDocumentProperties) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseCreateDocumentAdapter.cs:line 294
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseCreateDocumentAdapter.CreateDocument(String documentType, IDictionary`2 keywords, String fileName, List`1 documentPages) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseCreateDocumentAdapter.cs:line 147
+   at WC.Services.Document.Dotnet8.Managers.v6.CreateDocumentManager.CreateDocument(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\CreateDocumentManager.cs:line 71
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Upload(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.FileLink.cs:line 173
+2024-10-25 05:58:42,817 [9] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 05:59:23,529 [10] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 05:59:23,591 [10] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 05:59:23,630 [10] INFO  Program [(null)] - Saving document for 'Medical Report' document type name through Hyland Unity API.
+2024-10-25 05:59:47,173 [10] INFO  Program [(null)] - pdf
+2024-10-25 06:00:10,187 [10] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 06:03:58,913 [13] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 06:03:59,084 [13] ERROR Program [(null)] - File Not Found. : Unable to find file 'dummy.pdf'.. Model State: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Request: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+System.IO.FileNotFoundException: Unable to find file 'dummy.pdf'.
+   at WC.Services.Document.Dotnet8.Managers.v6.CreateDocumentManager.CreateDocument(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\CreateDocumentManager.cs:line 61
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Upload(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.FileLink.cs:line 173
+2024-10-25 06:03:59,144 [13] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 06:04:44,118 [13] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 06:04:44,223 [13] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 06:04:44,372 [13] INFO  Program [(null)] - Saving document for 'Medical Report' document type name through Hyland Unity API.
+2024-10-25 06:04:53,919 [13] INFO  Program [(null)] - pdf
+2024-10-25 06:04:53,931 [13] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 06:06:24,475 [10] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 06:06:24,645 [10] ERROR Program [(null)] - File Not Found. : Unable to find file 'dummy.pdf'.. Model State: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Request: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+System.IO.FileNotFoundException: Unable to find file 'dummy.pdf'.
+   at WC.Services.Document.Dotnet8.Managers.v6.CreateDocumentManager.CreateDocument(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\CreateDocumentManager.cs:line 61
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Upload(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.FileLink.cs:line 173
+2024-10-25 06:06:24,705 [10] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 06:06:48,948 [13] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 06:06:49,057 [13] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 06:06:49,218 [13] INFO  Program [(null)] - Saving document for 'Medical Report' document type name through Hyland Unity API.
+2024-10-25 06:07:01,737 [13] INFO  Program [(null)] - pdf
+2024-10-25 06:07:52,439 [13] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 06:08:36,116 [19] INFO  Program [(null)] - Request for DocumentController.Create. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentRequest
+2024-10-25 06:08:43,176 [19] INFO  Program [(null)] - html
+2024-10-25 06:08:43,177 [19] INFO  Program [(null)] - Finished DocumentController.Create
+2024-10-25 06:19:22,022 [19] INFO  Program [(null)] - Request for DocumentController.GetDocument. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.DownloadRequest
+2024-10-25 06:19:34,310 [19] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 06:19:45,471 [19] INFO  Program [(null)] - pdf
+2024-10-25 06:20:55,744 [19] INFO  Program [(null)] - Response for DocumentController.GetDocument. Response details: WC.Services.Document.Dotnet8.Models.v6.Responses.RetrieveDocumentResponse
+2024-10-25 06:21:05,965 [19] ERROR Program [(null)] - The header contains invalid values at index 0: 'WC.Services.Document.Dotnet8.Models.v6.Responses.RetrieveDocumentResponse'
+System.FormatException: The header contains invalid values at index 0: 'WC.Services.Document.Dotnet8.Models.v6.Responses.RetrieveDocumentResponse'
+   at Microsoft.Net.Http.Headers.HttpHeaderParser`1.ParseValue(StringSegment value, Int32& index)
+   at Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse(StringSegment input)
+   at Microsoft.AspNetCore.Mvc.ControllerBase.Content(String content, String contentType)
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.GetDocument(Int64 documentId, DownloadRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.Retrieval.cs:line 65
+2024-10-25 06:21:06,025 [19] INFO  Program [(null)] - Finished DocumentController.GetDocument
+2024-10-25 06:27:42,937 [5] INFO  Program [(null)] - Request for DocumentController.GetDocument. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.DownloadRequest
+2024-10-25 06:27:45,618 [5] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 06:27:56,135 [5] INFO  Program [(null)] - pdf
+2024-10-25 06:28:25,006 [5] INFO  Program [(null)] - Response for DocumentController.GetDocument. Response details: WC.Services.Document.Dotnet8.Models.v6.Responses.RetrieveDocumentResponse
+2024-10-25 06:28:27,756 [5] INFO  Program [(null)] - Finished DocumentController.GetDocument
+2024-10-25 08:14:06,956 [7] INFO  Program [(null)] - Request for DocumentController.Search. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.SearchRequest
+2024-10-25 08:14:08,752 [7] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 08:15:23,953 [7] ERROR Program [(null)] - Sequence contains no matching element
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.LetterTypeValues(Boolean memberFacing, Boolean providerFacing) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 694
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.SetupInstanceVariables(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 758
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.Search(ISearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.Search.cs:line 30
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.Search(ISearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\BaseDocumentManager.cs:line 125
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Search(SearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.Search.cs:line 71
+2024-10-25 08:15:24,010 [7] INFO  Program [(null)] - Finished DocumentController.Search
+2024-10-25 08:16:52,394 [20] INFO  Program [(null)] - Request for DocumentController.Search. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.SearchRequest
+2024-10-25 08:16:52,395 [20] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 08:18:06,892 [20] ERROR Program [(null)] - Sequence contains no matching element
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.LetterTypeValues(Boolean memberFacing, Boolean providerFacing) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 694
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.SetupInstanceVariables(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 758
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.Search(ISearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.Search.cs:line 30
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.Search(ISearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\BaseDocumentManager.cs:line 125
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Search(SearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.Search.cs:line 71
+2024-10-25 08:18:06,899 [20] INFO  Program [(null)] - Finished DocumentController.Search
+2024-10-25 08:21:18,471 [30] INFO  Program [(null)] - Request for DocumentController.Search. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.SearchRequest
+2024-10-25 08:21:18,472 [30] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 08:26:14,999 [30] ERROR Program [(null)] - Value cannot be null. (Parameter 'source')
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.<CreateFromAndWhereKeyword>b__23_0(String dc)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.CreateFromAndWhereKeyword(ISearchRequest request)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.CreateKeywordStatements(ISearchRequest request)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.Search(ISearchRequest request)
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.Search(ISearchRequest request)
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Search(SearchRequest request)
+2024-10-25 08:26:15,016 [30] INFO  Program [(null)] - Finished DocumentController.Search
+2024-10-25 08:26:41,194 [16] INFO  Program [(null)] - Request for DocumentController.Search. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.SearchRequest
+2024-10-25 08:26:41,195 [16] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 08:30:24,739 [16] ERROR Program [(null)] - Value cannot be null. (Parameter 'source')
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.<CreateFromAndWhereKeyword>b__23_0(String dc)
+   at System.Linq.Enumerable.WhereSelectListIterator`2.ToList()
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.CreateFromAndWhereKeyword(ISearchRequest request)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.CreateKeywordStatements(ISearchRequest request)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.Search(ISearchRequest request)
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.Search(ISearchRequest request)
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Search(SearchRequest request)
+2024-10-25 08:30:24,742 [16] INFO  Program [(null)] - Finished DocumentController.Search
+2024-10-25 08:30:39,513 [32] INFO  Program [(null)] - Request for DocumentController.Search. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.SearchRequest
+2024-10-25 08:30:39,513 [32] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 09:05:17,417 [13] INFO  Program [(null)] - Request for DocumentController.GetDocument. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.DownloadRequest
+2024-10-25 09:05:17,432 [13] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 09:05:22,275 [13] INFO  Program [(null)] - pdf
+2024-10-25 09:05:22,344 [13] INFO  Program [(null)] - Response for DocumentController.GetDocument. Response details: WC.Services.Document.Dotnet8.Models.v6.Responses.RetrieveDocumentResponse
+2024-10-25 09:05:22,345 [13] INFO  Program [(null)] - Finished DocumentController.GetDocument
+2024-10-25 09:20:05,413 [13] INFO  Program [(null)] - Starting ExportController.Export - Request: WC.Services.Document.Dotnet8.Models.v6.Requests.ExportDocumentRequest
+2024-10-25 09:21:25,238 [13] ERROR Program [(null)] - The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\	emp'
+System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\	emp'
+   at System.IO.FileSystem.CreateDirectory(String fullPath, Byte[] securityDescriptor)
+   at System.IO.Directory.CreateDirectory(String path)
+   at WC.Services.Document.Dotnet8.Managers.v6.ExportDocumentsManager.ExportDocuments(IExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\ExportDocumentsManager.cs:line 52
+   at WC.Service.Document.Dotnet8.Controllers.ExportController.Export(ExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\ExportController.cs:line 69
+2024-10-25 09:21:25,348 [13] INFO  Program [(null)] - ExportController.Export elapsed time: 88411.5949ms.
+2024-10-25 09:21:25,349 [13] INFO  Program [(null)] - Finished: ExportController.Export
+2024-10-25 09:21:42,795 [20] INFO  Program [(null)] - Starting ExportController.Export - Request: WC.Services.Document.Dotnet8.Models.v6.Requests.ExportDocumentRequest
+2024-10-25 09:22:03,146 [20] ERROR Program [(null)] - The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\	emp'
+System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\	emp'
+   at System.IO.FileSystem.CreateDirectory(String fullPath, Byte[] securityDescriptor)
+   at System.IO.Directory.CreateDirectory(String path)
+   at WC.Services.Document.Dotnet8.Managers.v6.ExportDocumentsManager.ExportDocuments(IExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\ExportDocumentsManager.cs:line 52
+   at WC.Service.Document.Dotnet8.Controllers.ExportController.Export(ExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\ExportController.cs:line 69
+2024-10-25 09:22:03,152 [20] INFO  Program [(null)] - ExportController.Export elapsed time: 25271.8626ms.
+2024-10-25 09:22:03,153 [20] INFO  Program [(null)] - Finished: ExportController.Export
+2024-10-25 09:22:23,383 [21] INFO  Program [(null)] - Starting ExportController.Export - Request: WC.Services.Document.Dotnet8.Models.v6.Requests.ExportDocumentRequest
+2024-10-25 09:23:01,137 [21] ERROR Program [(null)] - The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\	emp1'
+System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\	emp1'
+   at System.IO.FileSystem.CreateDirectory(String fullPath, Byte[] securityDescriptor)
+   at System.IO.Directory.CreateDirectory(String path)
+   at WC.Services.Document.Dotnet8.Managers.v6.ExportDocumentsManager.ExportDocuments(IExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\ExportDocumentsManager.cs:line 52
+   at WC.Service.Document.Dotnet8.Controllers.ExportController.Export(ExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\ExportController.cs:line 69
+2024-10-25 09:23:01,150 [21] INFO  Program [(null)] - ExportController.Export elapsed time: 42955.6315ms.
+2024-10-25 09:23:01,152 [21] INFO  Program [(null)] - Finished: ExportController.Export
+2024-10-25 09:29:07,567 [5] INFO  Program [(null)] - Starting ExportController.Export - Request: WC.Services.Document.Dotnet8.Models.v6.Requests.ExportDocumentRequest
+2024-10-25 09:29:22,305 [5] INFO  Program [(null)] - Export Request results, Page:1.
+2024-10-25 09:31:39,135 [9] INFO  Program [(null)] - Starting ExportController.Export - Request: WC.Services.Document.Dotnet8.Models.v6.Requests.ExportDocumentRequest
+2024-10-25 09:32:08,235 [9] INFO  Program [(null)] - Export Request results, Page:1.
+2024-10-25 09:32:16,046 [9] ERROR Program [(null)] - Sequence contains no matching element
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.SqlAdapter.LetterTypeValues() in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\SqlAdapter.cs:line 440
+   at WC.Services.Document.Dotnet8.Adapters.v6.SqlAdapter.SetupInstanceVariables(ISearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\SqlAdapter.cs:line 494
+   at WC.Services.Document.Dotnet8.Adapters.v6.SqlAdapter.SearchDocuments(ISearchRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\SqlAdapter.cs:line 62
+   at WC.Services.Document.Dotnet8.Managers.v6.ExportDocumentsManager.ExportDocuments(IExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\ExportDocumentsManager.cs:line 65
+   at WC.Service.Document.Dotnet8.Controllers.ExportController.Export(ExportDocumentRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\ExportController.cs:line 69
+2024-10-25 09:32:16,109 [9] INFO  Program [(null)] - ExportController.Export elapsed time: 36973.4317ms.
+2024-10-25 09:32:16,109 [9] INFO  Program [(null)] - Finished: ExportController.Export
+2024-10-25 09:45:12,434 [18] INFO  Program [(null)] - Request for KeywordController.GetKeywordsByDocumentId. Request details: WC.Services.Document.Dotnet8.Models.v6.DocumentKeywordRequest
+2024-10-25 09:45:33,222 [18] INFO  Program [(null)] - Response for KeywordController.GetKeywordsByDocumentId. response details: WC.Services.Document.Dotnet8.Models.v6.DocumentKeywordResponse
+2024-10-25 09:45:36,610 [18] INFO  Program [(null)] - Finished KeywordController.GetKeywordsByDocumentId
+2024-10-25 09:52:57,268 [29] INFO  Program [(null)] - Starting KeywordController.UpdateKeywords, Request: WC.Services.Document.Dotnet8.Models.v6.Requests.BatchUpdateKeywordsRequest
+2024-10-25 09:53:36,046 [29] INFO  Program [(null)] - Unable to obtain Exclusive lock to update document [2468]; Attempt #1
+2024-10-25 09:54:21,406 [29] ERROR Program [(null)] - Object reference not set to an instance of an object.
+2024-10-25 09:54:21,414 [29] INFO  Program [(null)] - Response for KeywordController.UpdateKeywords. Response details: WC.Services.Document.Dotnet8.Models.v6.Responses.KeywordUpdateResponse
+2024-10-25 09:54:21,414 [29] INFO  Program [(null)] - Finished KeywordController.UpdateKeywords
+2024-10-25 09:54:35,444 [29] INFO  Program [(null)] - Starting KeywordController.UpdateKeywords, Request: WC.Services.Document.Dotnet8.Models.v6.Requests.BatchUpdateKeywordsRequest
+2024-10-25 09:54:40,298 [29] INFO  Program [(null)] - Updated document [2468] on attempt #1
+2024-10-25 09:54:53,318 [29] INFO  Program [(null)] - Response for KeywordController.UpdateKeywords. Response details: WC.Services.Document.Dotnet8.Models.v6.Responses.KeywordUpdateResponse
+2024-10-25 09:54:54,306 [29] INFO  Program [(null)] - Finished KeywordController.UpdateKeywords
+2024-10-25 10:11:47,515 [9] INFO  Program [(null)] - Request for MemberController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-25 10:11:50,346 [9] INFO  Program [(null)] - Invalid Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 10:11:58,417 [9] INFO  Program [(null)] - Finished MemberController.DocumentTypesCount
+2024-10-25 10:12:41,446 [13] INFO  Program [(null)] - Request for MemberController.DocumentTypesCount. Request details: WC.Services.Document.Dotnet8.Models.v6.Requests.CountRequest
+2024-10-25 10:12:43,327 [13] INFO  Program [(null)] - Validated Model StateSystem.Collections.Generic.Dictionary`2[System.String,System.Object]
+2024-10-25 10:14:10,005 [13] ERROR Program [(null)] - Sequence contains no matching element
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.LetterTypeValues(Boolean memberFacing, Boolean providerFacing) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 694
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.SetupInstanceVariables(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.cs:line 758
+   at WC.Services.Document.Dotnet8.Adapters.v6.OnBaseSqlAdapter.DocumentTypesCount(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Adapters\v6\OnBaseSqlAdapter.Count.cs:line 56
+   at WC.Services.Document.Dotnet8.Managers.v6.BaseDocumentManager.DocumentTypeCounts(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\BaseDocumentManager.cs:line 73
+   at WC.Services.Document.Dotnet8.Managers.v6.MemberManager.DocumentTypeCounts(IFilteredRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\MemberManager.cs:line 93
+   at WC.Service.Document.Dotnet8.Controllers.MemberController.DocumentTypesCount(String memberId, CountRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\MemberController.Count.cs:line 61
+2024-10-25 10:14:11,135 [13] INFO  Program [(null)] - Finished MemberController.DocumentTypesCount
+2024-10-25 10:40:05,408 [16] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 10:40:05,594 [16] ERROR Program [(null)] - File Not Found. : Unable to find file 'dummy.pdf'.. Model State: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, Request: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+System.IO.FileNotFoundException: Unable to find file 'dummy.pdf'.
+   at WC.Services.Document.Dotnet8.Managers.v6.CreateDocumentManager.CreateDocument(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Managers\v6\CreateDocumentManager.cs:line 61
+   at WC.Service.Document.Dotnet8.Controllers.DocumentController.Upload(CreateDocumentFileLinkRequest request) in C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\SRC\WC.Services.Document.Dotnet8\Controllers\DocumentController.FileLink.cs:line 173
+2024-10-25 10:40:05,646 [16] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 10:40:57,487 [17] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 10:40:57,627 [17] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 10:40:57,783 [17] INFO  Program [(null)] - Saving document for 'Medical Report' document type name through Hyland Unity API.
+2024-10-25 10:40:57,983 [17] INFO  Program [(null)] - pdf
+2024-10-25 10:40:57,994 [17] INFO  Program [(null)] - Finished DocumentController.Upload
+2024-10-25 10:54:36,915 [10] INFO  Program [(null)] - Request for DocumentController.Upload. Request details: WC.Services.Document.Dotnet8.Models.v6.CreateDocumentFileLinkRequest
+2024-10-25 10:54:37,047 [10] INFO  Program [(null)] - Retrieving file type from OnBase API for 'pdf' file type name.
+2024-10-25 10:54:37,188 [10] INFO  Program [(null)] - Saving document for 'Medical Report' document type name through Hyland Unity API.
+2024-10-25 10:54:37,369 [10] INFO  Program [(null)] - pdf
+2024-10-25 10:54:37,380 [10] INFO  Program [(null)] - Finished DocumentController.Upload

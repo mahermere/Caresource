@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+PfJVNLxGfaZjhPsXKyFVrbV1vBzt9nqEIzAEQ1jrB5tZnhdrK5iSDeiKRkEQVePv8kEYMPGmiZSgMQD/IbElQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\DocumentService.Dotnet8\\DocumentService.MVC.Dotnet8\\WC.Services.Document.MVC.Dotnet8.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jyoti.shah\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\jyoti.shah\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,824 @@
+{
+	"info": {
+		"_postman_id": "b6de9f8d-a0fd-4e16-9180-2fb2f5b0b98f",
+		"name": "W&C Services DocumentService.Dotnet8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37782135",
+		"_collection_link": "https://speeding-resonance-336720.postman.co/workspace/Caresource~0a952028-6cc7-44d8-bf07-7aa2d4c48e53/collection/37756819-b6de9f8d-a0fd-4e16-9180-2fb2f5b0b98f?action=share&source=collection_link&creator=37782135"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "DocumentController",
+					"item": [
+						{
+							"name": "DocumentController.Count",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"SourceApplication\": \"WV-Customer\",\r\n  \"userId\": \"manager\",\r\n  \"documentTypes\": [\r\n    \"Appointment Letter\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Member Facing\",\r\n      \"value\": \"M1\",\r\n      \"compareOperator\": 0\r\n    },\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Provider Facing\",\r\n      \"value\": \"M1\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-10-24T07:23:34.390Z\",\r\n  \"endDate\": \"2024-10-24T07:23:34.390Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Document/DocumentTypesCount",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Document",
+										"DocumentTypesCount"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TotalRecordCount",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"SourceApplication\": \"WV-Customer\",\r\n  \"userId\": \"manager\",\r\n  \"documentTypes\": [\r\n    \"Appointment Letter\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Member Facing\",\r\n      \"value\": \"M1\",\r\n      \"compareOperator\": 0\r\n    },\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Provider Facing\",\r\n      \"value\": \"M1\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-10-24T07:23:34.390Z\",\r\n  \"endDate\": \"2024-10-24T07:23:34.390Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}}/api/Document/TotalRecordCount",
+									"host": [
+										"{{hostnameDocumentServices}}}"
+									],
+									"path": [
+										"api",
+										"Document",
+										"TotalRecordCount"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"WV-Customer\",\r\n  \"userId\": \"manager\",\r\n  \"requestData\": {\r\n    \"documentType\": \"155\",\r\n    \"keywords\": {\r\n      \"Claim Number\": \"101\",\r\n      \"Member Id\": \"1\",\r\n      \"Member Name\": \"jyoti\"\r\n    }\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Document/create",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Document",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"string\",\r\n  \"userId\": \"manager\",\r\n  \"requestData\": {\r\n    \"fileName\": \"dummy.pdf\",\r\n    \"documentType\": \"Medical Report\",\r\n    \"keywords\": {\r\n      \"Patient ID\": \"111\",\r\n      \"Patient Name\": \"Jyoti\",\r\n      \"Patient Age\": \"42\"\r\n    }\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Document/filelink",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Document",
+										"filelink"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDocument",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"SourceApplication\": \"ABC\", \r\n   \"UserId\": \"manager\",\r\n  \"documentId\": 2468,\r\n  \"displayColumns\": [\r\n    \"Patient Name\",\r\n    \"Patient Age\"\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Document/GetDocument/{{documentId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Document",
+										"GetDocument",
+										"{{documentId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"ABC\",\r\n  \"userId\": \"manager\",\r\n  \"displayColumns\": [\r\n    \"Patient ID\",\r\n    \"Patient Name\"\r\n  ],\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient Name\",\r\n      \"value\": \"jyoti\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-08-25\",\r\n  \"endDate\": \"2024-10-25\",\r\n  \"paging\": {\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 0\r\n  },\r\n  \"sorting\": {\r\n    \"columnName\": \"Patient ID\",\r\n    \"sortAscending\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Document/Search",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Document",
+										"Search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ExportController",
+					"item": [
+						{
+							"name": "Export",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"WV-Customer\",\r\n  \"userId\": \"manager\",\r\n  \"displayColumns\": [\r\n    \"Patient ID\",\r\n    \"Patient Name\"\r\n  ],\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient Name\",\r\n      \"value\": \"jyoti\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-09-25T09:11:28.928Z\",\r\n  \"endDate\": \"2024-10-25T09:11:28.928Z\",\r\n  \"paging\": {\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 0\r\n  },\r\n  \"sorting\": {\r\n    \"columnName\": \"Patient ID\",\r\n    \"sortAscending\": true\r\n  },\r\n  \"path\": \"c:\\\\temp\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Export/Export",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Export",
+										"Export"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"WV-Customer\",\r\n  \"userId\": \"manager\",\r\n  \"displayColumns\": [\r\n    \"Patient ID\",\r\n    \"Patient Name\"\r\n  ],\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient Name\",\r\n      \"value\": \"jyoti\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-09-25T09:11:28.928Z\",\r\n  \"endDate\": \"2024-10-25T09:11:28.928Z\",\r\n  \"paging\": {\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 0\r\n  },\r\n  \"sorting\": {\r\n    \"columnName\": \"Patient ID\",\r\n    \"sortAscending\": true\r\n  },\r\n  \"path\": \"c:\\\\temp\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Export/Search",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Export",
+										"Search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "KeywordController",
+					"item": [
+						{
+							"name": "GetKeywordsByDocumentId",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"ABC\",\r\n  \"userId\": \"manager\",\r\n  \"displayColumns\": [\r\n    \"Patient ID\"\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Keyword/GetKeywordsByDocumentId/{{documentId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Keyword",
+										"GetKeywordsByDocumentId",
+										"{{documentId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateKeywords",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"string\",\r\n  \"userId\": \"manager\",\r\n  \"requestData\": [\r\n    {\r\n      \"documentId\": 2468,\r\n      \"keywords\": {\r\n        \"Patient Name\": \"Jyoti\",\r\n        \"Patient Age\": \"42\"\r\n      }\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Keyword/update",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Keyword",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MemberController",
+					"item": [
+						{
+							"name": "DocumentTypesCount",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"string\",\r\n  \"userId\": \"manager\",\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient ID\",\r\n      \"value\": \"1\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-10-25T09:56:38.337Z\",\r\n  \"endDate\": \"2024-10-25T09:56:38.337Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Member/DocumentTypesCount/{{memberId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Member",
+										"DocumentTypesCount",
+										"{{memberId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TotalRecordCount",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"string\",\r\n  \"userId\": \"manager\",\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient ID\",\r\n      \"value\": \"1\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-10-25T10:14:55.478Z\",\r\n  \"endDate\": \"2024-10-25T10:14:55.478Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Member/TotalRecordCount/{{memberId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Member",
+										"TotalRecordCount",
+										"{{memberId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"string\",\r\n  \"userId\": \"manager\",\r\n  \"displayColumns\": [\r\n    \"Patient ID\"\r\n  ],\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient Name\",\r\n      \"value\": \"abc\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-10-25T10:17:18.503Z\",\r\n  \"endDate\": \"2024-10-25T10:17:18.503Z\",\r\n  \"paging\": {\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 0\r\n  },\r\n  \"sorting\": {\r\n    \"columnName\": \"Patient ID\",\r\n    \"sortAscending\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Member/TotalRecordCount/{{memberId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Member",
+										"TotalRecordCount",
+										"{{memberId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ProviderController",
+					"item": [
+						{
+							"name": "DocumentTypesCount",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "secret-key",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Provider/DocumentTypesCount/{{providerId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Provider",
+										"DocumentTypesCount",
+										"{{providerId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TotalRecordCount",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"string\",\r\n  \"userId\": \"manager\",\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient ID\",\r\n      \"value\": \"1\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-10-25T10:14:55.478Z\",\r\n  \"endDate\": \"2024-10-25T10:14:55.478Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Member/TotalRecordCount/{{providerId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Member",
+										"TotalRecordCount",
+										"{{providerId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ProviderDocuments",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{OnBasePassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{OnBaseUserName}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "secret-key",
+										"value": "{{secretkey}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"sourceApplication\": \"string\",\r\n  \"userId\": \"manager\",\r\n  \"displayColumns\": [\r\n    \"Patient ID\"\r\n  ],\r\n  \"documentTypes\": [\r\n    \"Medical Report\"\r\n  ],\r\n  \"filters\": [\r\n    {\r\n      \"includeNull\": true,\r\n      \"name\": \"Patient Name\",\r\n      \"value\": \"jy\",\r\n      \"compareOperator\": 0\r\n    }\r\n  ],\r\n  \"startDate\": \"2024-10-25T10:29:10.110Z\",\r\n  \"endDate\": \"2024-10-25T10:29:10.110Z\",\r\n  \"paging\": {\r\n    \"pageNumber\": 0,\r\n    \"pageSize\": 0\r\n  },\r\n  \"sorting\": {\r\n    \"columnName\": \"Patient ID\",\r\n    \"sortAscending\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{hostnameDocumentServices}}/api/Provider/ProviderDocuments/{{providerId}}",
+									"host": [
+										"{{hostnameDocumentServices}}"
+									],
+									"path": [
+										"api",
+										"Provider",
+										"ProviderDocuments",
+										"{{providerId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

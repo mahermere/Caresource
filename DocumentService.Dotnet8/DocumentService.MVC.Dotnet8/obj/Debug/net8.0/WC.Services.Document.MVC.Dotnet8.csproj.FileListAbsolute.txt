@@ -1,0 +1,9 @@
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.AssemblyInfoInputs.cache
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.AssemblyInfo.cs
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.csproj.CoreCompileInputs.cache
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.RazorAssemblyInfo.cache
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.RazorAssemblyInfo.cs
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.sourcelink.json
+C:\Users\jyoti.shah\source\repos\CareSource\Caresource.Dotnet8.Migration\DocumentService.Dotnet8\DocumentService.MVC.Dotnet8\obj\Debug\net8.0\WC.Services.Document.MVC.Dotnet8.csproj.AssemblyReference.cache
