@@ -1,0 +1,27 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "https://fws-int.caresource.corp/2.0/FacetsWebService.svc?singleWsdl"
+    ],
+    "collectionTypes": [
+      "System.Collections.Generic.Dictionary`2",
+      "System.Collections.Generic.List`1"
+    ],
+    "internalTypeAccess": true,
+    "namespaceMappings": [
+      "*, Facets.Claims.Secure.sdsd"
+    ],
+    "references": [
+      "Asp.Versioning.Abstractions, {Asp.Versioning.Abstractions, 8.0.0}",
+      "Asp.Versioning.Http, {Asp.Versioning.Http, 8.0.0}",
+      "Microsoft.Extensions.Primitives, {Microsoft.Extensions.Primitives, 8.0.0}",
+      "Microsoft.OpenApi, {Microsoft.OpenApi, 1.2.3}",
+      "Swashbuckle.AspNetCore.Swagger, {Swashbuckle.AspNetCore.Swagger, 6.4.0}",
+      "Swashbuckle.AspNetCore.SwaggerGen, {Swashbuckle.AspNetCore.SwaggerGen, 6.4.0}",
+      "Swashbuckle.AspNetCore.SwaggerUI, {Swashbuckle.AspNetCore.SwaggerUI, 6.4.0}"
+    ],
+    "sync": true,
+    "targetFramework": "net8.0",
+    "typeReuseMode": "All"
+  }
+}
