@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "9de7509d-3213-427c-8425-626cfef93931",
+		"name": "W&C Services Logging Dotnet8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37782135",
+		"_collection_link": "https://speeding-resonance-336720.postman.co/workspace/0a952028-6cc7-44d8-bf07-7aa2d4c48e53/collection/7963377-9de7509d-3213-427c-8425-626cfef93931?action=share&source=collection_link&creator=37782135"
+	},
+	"item": [
+		{
+			"name": "logging",
+			"item": [
+				{
+					"name": "Log",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"time\":{{$timestamp}},\n\t\"host\": \"API02\",\n\t\"source\": \"Document Service\",\n\t\"sourcetype\": \"Document Service\",\n\t\"event\": {\n\t\t\"Message\": \"Validated Model State 2\",\n\t\t\"LogLevel\": \"Trace\"\n\t},\n\t\"fields\": {\n\t\t\"ModelState\": \"{\\\"DisplayColumns[0]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Claim Number\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Claim Number\\\"},\\\"Errors\\\":[]},\\\"DisplayColumns[1]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Subscriber ID\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Subscriber ID\\\"},\\\"Errors\\\":[]},\\\"DisplayColumns[2]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Member Suffix\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Member Suffix\\\"},\\\"Errors\\\":[]},\\\"DisplayColumns[3]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Member ID\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Member ID\\\"},\\\"Errors\\\":[]},\\\"DocumentTypes[0]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Approval OP-Servicing Provider\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Approval OP-Servicing Provider\\\"},\\\"Errors\\\":[]},\\\"Filters[0].Name\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Provider ID\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Provider ID\\\"},\\\"Errors\\\":[]},\\\"Filters[0].Value\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"350892672002\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"350892672002\\\"},\\\"Errors\\\":[]},\\\"Filters[1].Name\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Provider Facing\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Provider Facing\\\"},\\\"Errors\\\":[]},\\\"StartDate\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"2022-10-14\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"2022-10-14\\\"},\\\"Errors\\\":[]},\\\"EndDate\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"2022-10-14\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"2022-10-14\\\"},\\\"Errors\\\":[]},\\\"SourceApplication\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Postman Testing\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Postman Testing\\\"},\\\"Errors\\\":[]},\\\"UserId\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"ACRDEVER\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"ACRDEVER\\\"},\\\"Errors\\\":[]}}\",\n\t\t\"CorrelationGuid\": \"6fc6c618-b192-4d79-91d3-44b56e012a20\",\n\t\t\"CallerMemberName\": \"IsValid\",\n\t\t\"CallerFilePath\": \"C:\\\\Users\\\\crdever\\\\source\\\\repos\\\\WorkflowAndCollab.Services.Document\\\\src\\\\WC.Services.Document\\\\Managers\\\\v5\\\\BaseDocumentManager.cs\",\n\t\t\"CallerLineNumber\": \"214\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/Log",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"Log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log/Debug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"host\": \"C0032128L\",\r\n\t\"source\": \"Postman testing\",\r\n\t\"sourcetype\": \"test log method\",\r\n\t\"event\": {\r\n\t\t\"message\": \"this is a weird message\"\r\n\t},\r\n\t\"fields\": {\r\n\t\t\"SourceApplication\": \"PostMan\",\r\n\t\t\"QueryString\": \"\",\r\n\t\t\"RequestBody\": \"\",\r\n\t\t\"ResponseBody\": \"\",\r\n\t\t\"CallingApplication\": \"Goob\",\r\n\t\t\"CorrelationGuid\":  \"\",\r\n\t\t\"CallingFilePath\": \"C:\\\\Users\\\\crdever\\\\source\\\\repos\\\\WorkflowAndCollab.Core\\\\test\\\\Core.Tests\\\\Diagnostics\\\\ServiceLoggerTests.cs\",\r\n\t\t\"CallingLineNumber\": \"63\",\r\n\t\t\"CallingMethodName\": \"LogTest1\",\r\n\t\t\"ExceptionType\": \"\",\r\n\t\t\"Stacktrace\": \"n\",\r\n\t\t\"Exception\": \"\",\r\n\t\t\"HttpStatusCode\": \"\",\r\n\t\t\"CurrentUser\": \"\"\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/api/v{{Version}}/Log/Debug",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"api",
+								"v{{Version}}",
+								"Log",
+								"Debug"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log/Error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"host\": \"C0032128L\",\r\n\t\"source\": \"Postman testing\",\r\n\t\"sourcetype\": \"test log method\",\r\n\t\"event\": {\r\n\t\t\"message\": \"this is a weird message\"\r\n\t},\r\n\t\"fields\": {\r\n\t\t\"SourceApplication\": \"PostMan\",\r\n\t\t\"QueryString\": \"\",\r\n\t\t\"RequestBody\": \"\",\r\n\t\t\"ResponseBody\": \"\",\r\n\t\t\"CallingApplication\": \"Goob\",\r\n\t\t\"CorrelationGuid\":  \"\",\r\n\t\t\"CallingFilePath\": \"C:\\\\Users\\\\crdever\\\\source\\\\repos\\\\WorkflowAndCollab.Core\\\\test\\\\Core.Tests\\\\Diagnostics\\\\ServiceLoggerTests.cs\",\r\n\t\t\"CallingLineNumber\": \"63\",\r\n\t\t\"CallingMethodName\": \"LogTest1\",\r\n\t\t\"ExceptionType\": \"\",\r\n\t\t\"Stacktrace\": \"n\",\r\n\t\t\"Exception\": \"\",\r\n\t\t\"HttpStatusCode\": \"\",\r\n\t\t\"CurrentUser\": \"\"\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/api/v{{Version}}/Log/Error",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"api",
+								"v{{Version}}",
+								"Log",
+								"Error"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log/Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"host\": \"C0032128L\",\r\n\t\"source\": \"Postman testing\",\r\n\t\"sourcetype\": \"test log method\",\r\n\t\"event\": {\r\n\t\t\"message\": \"this is a weird message\",\r\n\t\t\"logLevel\": \"Information\"\r\n\t},\r\n\t\"fields\": {\r\n\t\t\"SourceApplication\": \"PostMan\",\r\n\t\t\"QueryString\": \"\",\r\n\t\t\"RequestBody\": \"\",\r\n\t\t\"ResponseBody\": \"\",\r\n\t\t\"CallingApplication\": \"Goob\",\r\n\t\t\"CorrelationGuid\":  \"\",\r\n\t\t\"CallingFilePath\": \"C:\\\\Users\\\\crdever\\\\source\\\\repos\\\\WorkflowAndCollab.Core\\\\test\\\\Core.Tests\\\\Diagnostics\\\\ServiceLoggerTests.cs\",\r\n\t\t\"CallingLineNumber\": \"63\",\r\n\t\t\"CallingMethodName\": \"LogTest1\",\r\n\t\t\"ExceptionType\": \"\",\r\n\t\t\"Stacktrace\": \"n\",\r\n\t\t\"Exception\": \"\",\r\n\t\t\"HttpStatusCode\": \"\",\r\n\t\t\"CurrentUser\": \"\"\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/api/v{{Version}}/Log/Info",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"api",
+								"v{{Version}}",
+								"Log",
+								"Info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log/Warning",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"host\": \"C0032128L\",\r\n\t\"source\": \"Postman testing\",\r\n\t\"sourcetype\": \"test log method\",\r\n\t\"event\": {\r\n\t\t\"message\": \"this is a weird message\",\r\n\t\t\"logLevel\": \"Error\"\r\n\t},\r\n\t\"fields\": {\r\n\t\t\"SourceApplication\": \"PostMan\",\r\n\t\t\"QueryString\": \"\",\r\n\t\t\"RequestBody\": \"\",\r\n\t\t\"ResponseBody\": \"\",\r\n\t\t\"CallingApplication\": \"Goob\",\r\n\t\t\"CorrelationGuid\":  \"\",\r\n\t\t\"CallingFilePath\": \"C:\\\\Users\\\\crdever\\\\source\\\\repos\\\\WorkflowAndCollab.Core\\\\test\\\\Core.Tests\\\\Diagnostics\\\\ServiceLoggerTests.cs\",\r\n\t\t\"CallingLineNumber\": \"63\",\r\n\t\t\"CallingMethodName\": \"LogTest1\",\r\n\t\t\"ExceptionType\": \"\",\r\n\t\t\"Stacktrace\": \"n\",\r\n\t\t\"Exception\": \"\",\r\n\t\t\"HttpStatusCode\": \"\",\r\n\t\t\"CurrentUser\": \"\"\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/api/v{{Version}}/Log/Warning",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"api",
+								"v{{Version}}",
+								"Log",
+								"Warning"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log/Trace",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"host\": \"C0032128L\",\r\n\t\"source\": \"Postman testing\",\r\n\t\"sourcetype\": \"test log method\",\r\n\t\"event\": {\r\n\t\t\"message\": \"this is a weird message\",\r\n\t\t\"logLevel\": \"Error\"\r\n\t},\r\n\t\"fields\": {\r\n\t\t\"SourceApplication\": \"PostMan\",\r\n\t\t\"QueryString\": \"\",\r\n\t\t\"RequestBody\": \"\",\r\n\t\t\"ResponseBody\": \"\",\r\n\t\t\"CallingApplication\": \"Goob\",\r\n\t\t\"CorrelationGuid\":  \"\",\r\n\t\t\"CallingFilePath\": \"C:\\\\Users\\\\crdever\\\\source\\\\repos\\\\WorkflowAndCollab.Core\\\\test\\\\Core.Tests\\\\Diagnostics\\\\ServiceLoggerTests.cs\",\r\n\t\t\"CallingLineNumber\": \"63\",\r\n\t\t\"CallingMethodName\": \"LogTest1\",\r\n\t\t\"ExceptionType\": \"\",\r\n\t\t\"Stacktrace\": \"n\",\r\n\t\t\"Exception\": \"\",\r\n\t\t\"HttpStatusCode\": \"\",\r\n\t\t\"CurrentUser\": \"\"\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/api/v{{Version}}/Log/Trace",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"api",
+								"v{{Version}}",
+								"Log",
+								"Trace"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log/Critical",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"host\": \"C0032128L\",\r\n\t\"source\": \"Postman testing\",\r\n\t\"sourcetype\": \"test log method\",\r\n\t\"event\": {\r\n\t\t\"message\": \"this is a weird message\",\r\n\t\t\"logLevel\": \"Error\"\r\n\t},\r\n\t\"fields\": {\r\n\t\t\"SourceApplication\": \"PostMan\",\r\n\t\t\"QueryString\": \"\",\r\n\t\t\"RequestBody\": \"\",\r\n\t\t\"ResponseBody\": \"\",\r\n\t\t\"CallingApplication\": \"Goob\",\r\n\t\t\"CorrelationGuid\":  \"\",\r\n\t\t\"CallingFilePath\": \"C:\\\\Users\\\\crdever\\\\source\\\\repos\\\\WorkflowAndCollab.Core\\\\test\\\\Core.Tests\\\\Diagnostics\\\\ServiceLoggerTests.cs\",\r\n\t\t\"CallingLineNumber\": \"63\",\r\n\t\t\"CallingMethodName\": \"LogTest1\",\r\n\t\t\"ExceptionType\": \"\",\r\n\t\t\"Stacktrace\": \"n\",\r\n\t\t\"Exception\": \"\",\r\n\t\t\"HttpStatusCode\": \"\",\r\n\t\t\"CurrentUser\": \"\"\r\n\t}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/api/v{{Version}}/Log/Critical",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"api",
+								"v{{Version}}",
+								"Log",
+								"Critical"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "test",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"time\":{{$timestamp}},\n\t\"host\": \"API02\",\n\t\"source\": \"Document Service\",\n\t\"sourcetype\": \"Document Service\",\n\t\"event\": {\n\t\t\"Message\": \"Validated Model State 2\",\n\t\t\"LogLevel\": \"Information\"\n\t},\n\t\"fields\": {\n\t\t\"ModelState\": \"{\\\"DisplayColumns[0]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Claim Number\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Claim Number\\\"},\\\"Errors\\\":[]},\\\"DisplayColumns[1]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Subscriber ID\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Subscriber ID\\\"},\\\"Errors\\\":[]},\\\"DisplayColumns[2]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Member Suffix\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Member Suffix\\\"},\\\"Errors\\\":[]},\\\"DisplayColumns[3]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Member ID\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Member ID\\\"},\\\"Errors\\\":[]},\\\"DocumentTypes[0]\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Approval OP-Servicing Provider\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Approval OP-Servicing Provider\\\"},\\\"Errors\\\":[]},\\\"Filters[0].Name\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Provider ID\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Provider ID\\\"},\\\"Errors\\\":[]},\\\"Filters[0].Value\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"350892672002\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"350892672002\\\"},\\\"Errors\\\":[]},\\\"Filters[1].Name\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Provider Facing\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Provider Facing\\\"},\\\"Errors\\\":[]},\\\"StartDate\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"2022-10-14\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"2022-10-14\\\"},\\\"Errors\\\":[]},\\\"EndDate\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"2022-10-14\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"2022-10-14\\\"},\\\"Errors\\\":[]},\\\"SourceApplication\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"Postman Testing\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"Postman Testing\\\"},\\\"Errors\\\":[]},\\\"UserId\\\":{\\\"Value\\\":{\\\"AttemptedValue\\\":\\\"ACRDEVER\\\",\\\"Culture\\\":\\\"(Default)\\\",\\\"RawValue\\\":\\\"ACRDEVER\\\"},\\\"Errors\\\":[]}}\",\n\t\t\"CorrelationGuid\": \"6fc6c618-b192-4d79-91d3-44b56e012a20\",\n\t\t\"CallerMemberName\": \"IsValid\",\n\t\t\"CallerFilePath\": \"C:\\\\Users\\\\jyoti.shah\\\\source\\\\repos\\\\CareSource\\\\Caresource.Dotnet8.Migration\\\\WorkflowAndCollab.Services.Logging-main\\\\src\\\\WC.Services.Logging\\\\Adapters\\\\v1\\\\Splunk\\\\SplunkAdapter.cs\",\n\t\t\"CallerLineNumber\": \"214\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Root URL}}/api/v{{Version}}/Log",
+							"host": [
+								"{{Root URL}}"
+							],
+							"path": [
+								"api",
+								"v{{Version}}",
+								"Log"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{Token}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "splunk",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Port",
+			"value": "7243",
+			"type": "string"
+		},
+		{
+			"key": "Controller",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "Service",
+			"value": "Logging",
+			"type": "string"
+		}
+	]
+}

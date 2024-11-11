@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\WC.FXIAuthentication\\FXIAuth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B591F465-C38E-47A6-86E6-770CAE7B5A9F}|FXIAuthentication.csproj|c:\\users\\jyoti.shah\\source\\repos\\caresource\\caresource.dotnet8.migration\\wc.fxiauthentication\\fxiauth\\fxiauthentication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B591F465-C38E-47A6-86E6-770CAE7B5A9F}|FXIAuthentication.csproj|solutionrelative:fxiauthentication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FXIAuthentication.csproj",
+              "DocumentMoniker": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\WC.FXIAuthentication\\FXIAuth\\FXIAuthentication.csproj",
+              "RelativeDocumentMoniker": "FXIAuthentication.csproj",
+              "ToolTip": "C:\\Users\\jyoti.shah\\source\\repos\\CareSource\\Caresource.Dotnet8.Migration\\WC.FXIAuthentication\\FXIAuth\\FXIAuthentication.csproj",
+              "RelativeToolTip": "FXIAuthentication.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-11T03:41:00.535Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.csproj.AssemblyReference.cache
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.AssemblyInfoInputs.cache
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.AssemblyInfo.cs
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.csproj.CoreCompileInputs.cache
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jyoti.shah\source\repos\CareSource-GitHub\Caresource\WorkflowAndCollab.Services.Logging-main\src\WC.Services.Logging\obj\Debug\net6.0\WC.Services.Logging.sourcelink.json

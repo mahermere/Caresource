@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "c78ccde3-34de-44fc-8ed9-0c5bd98ee3a1",
+		"name": "W&C Services FXIAuthentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37782135",
+		"_collection_link": "https://speeding-resonance-336720.postman.co/workspace/0a952028-6cc7-44d8-bf07-7aa2d4c48e53/collection/37756819-c78ccde3-34de-44fc-8ed9-0c5bd98ee3a1?action=share&source=collection_link&creator=37782135"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "v",
+					"item": [
+						{
+							"name": "GetFxiAuthentication",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{hostnameFXIAuthentication}}}/api/v/GetFxiAuthentication/{{userName}}",
+									"host": [
+										"{{hostnameFXIAuthentication}}}"
+									],
+									"path": [
+										"api",
+										"v",
+										"GetFxiAuthentication",
+										"{{userName}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
