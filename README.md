@@ -7,6 +7,11 @@ $logDir = "E:\OnBase\Software\log\"
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $logFile = "${logDir}OnbaseStudioInstall_$timestamp.log"
 
+# Ensure the log directory exists
+if (-Not (Test-Path -Path $logDir)) {
+    New-Item -ItemType Directory -Path $logDir
+}
+
 # Construct the command line arguments
 $arguments = "/q /CompleteCommandArgs `"INSTALLDIR=`"$installDir`"` /log `"$logFile`""
 
@@ -17,10 +22,12 @@ $action = New-ScheduledTaskAction -Execute $setupPath -Argument $arguments
 $trigger = New-ScheduledTaskTrigger -AtStartup
 
 # Create a scheduled task principal with the gMSA account
-$principal = New-ScheduledTaskPrincipal -UserId "Domain\MyGMSA$" -LogonType Password -RunLevel Highest
+$principal = New-ScheduledTaskPrincipal -UserId "Domain\MyGMSA$" -LogonType ServiceAccount -RunLevel Highest
 
-# Register the scheduled task
-Register-ScheduledTask -TaskName "InstallOnBaseStudio" -Action $action -Trigger $trigger -Principal $principal
-
-# Start the scheduled task
-Start-ScheduledTask -TaskName "InstallOnBaseStudio"
+# Register the scheduled task with error handling
+try {
+    Register-ScheduledTask -TaskName "InstallOnBaseStudio" -Action $action -Trigger $trigger -Principal $principal
+    Start-ScheduledTask -TaskName "InstallOnBaseStudio"
+} catch {
+    Write-Error "Failed to register or start the scheduled task: $_"
+}
