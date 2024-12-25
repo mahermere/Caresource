@@ -15,9 +15,12 @@ if (-Not (Test-Path -Path $logDir)) {
 # Construct the command line arguments
 $arguments = "/q /CompleteCommandArgs `"INSTALLDIR=`"$installDir`"` /log `"$logFile`""
 
+# Properly quote the arguments to handle spaces
+$quotedArguments = $arguments -replace ' ', '` '
+
 # Execute the setup executable with the specified arguments
 try {
-    Start-Process -FilePath $setupPath -ArgumentList $arguments -Wait -NoNewWindow
+    Start-Process -FilePath $setupPath -ArgumentList $quotedArguments -Wait -NoNewWindow
     Write-Output "OnBase Studio installation completed successfully."
 } catch {
     Write-Error "Failed to execute the OnBase Studio installation: $_"
