@@ -15,19 +15,10 @@ if (-Not (Test-Path -Path $logDir)) {
 # Construct the command line arguments
 $arguments = "/q /CompleteCommandArgs `"INSTALLDIR=`"$installDir`"` /log `"$logFile`""
 
-# Create a scheduled task action
-$action = New-ScheduledTaskAction -Execute $setupPath -Argument $arguments
-
-# Create a scheduled task trigger (e.g., run at a specific time or on startup)
-$trigger = New-ScheduledTaskTrigger -AtStartup
-
-# Create a scheduled task principal with the gMSA account
-$principal = New-ScheduledTaskPrincipal -UserId "Domain\MyGMSA$" -LogonType ServiceAccount -RunLevel Highest
-
-# Register the scheduled task with error handling
+# Execute the setup executable with the specified arguments
 try {
-    Register-ScheduledTask -TaskName "InstallOnBaseStudio" -TaskPath "\" -Action $action -Trigger $trigger -Principal $principal
-    Start-ScheduledTask -TaskName "InstallOnBaseStudio"
+    Start-Process -FilePath $setupPath -ArgumentList $arguments -Wait -NoNewWindow
+    Write-Output "OnBase Studio installation completed successfully."
 } catch {
-    Write-Error "Failed to register or start the scheduled task: $_"
+    Write-Error "Failed to execute the OnBase Studio installation: $_"
 }
